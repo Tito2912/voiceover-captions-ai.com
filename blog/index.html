@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Voiceover & Captions AI | ElevenLabs Studio 3.0 workflows</title>
+  <meta name="description" content="Guides for ElevenLabs Studio 3.0: voiceovers, dubbing, captions and avatar video workflows.">
+  <link rel="canonical" href="https://voiceover-captions-ai.com/blog/">
+  <link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/blog/">
+  <link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/blog/">
+  <link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/blog/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://voiceover-captions-ai.com/blog/">
+  <meta property="og:title" content="Blog — Voiceover & Captions AI | ElevenLabs Studio 3.0 workflows">
+  <meta property="og:description" content="Best practices for ElevenLabs voiceovers, dubbing and caption workflows with avatars.">
+  <meta property="og:image" content="https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog — Voiceover & Captions AI">
+  <meta name="twitter:description" content="Guides for ElevenLabs Studio 3.0 voiceovers, dubbing, captions, and avatar workflows.">
+  <meta name="twitter:image" content="https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg">
+
+  <link rel="stylesheet" href="/assets/styles.min.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body class="blog-hub">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Voiceover Captions AI — Home">
+        <img src="/images/voiceover-captions-ai-logo.png" alt="Voiceover Captions AI logo" width="160" height="36">
+        <span class="visually-hidden">Voiceover Captions AI homepage</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><strong>Blog</strong></li>
+          <li><a href="/privacy-policy">Privacy</a></li>
+          <li class="lang">
+            <strong>English</strong> | <a href="/fr/blog/" hreflang="fr">French version</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Blog — ElevenLabs Studio 3.0 voiceovers & captions</h1>
+      <p class="lead">Practical guides for dubbing, captions and avatar workflows built on ElevenLabs Studio 3.0.</p>
+    </header>
+
+    <section class="intro">
+      <p>This blog is for production teams, creators, and product educators who need reliable dubbing and captions without adding hours of clean-up. Every article includes reproducible settings you can paste into ElevenLabs Studio 3.0 so you spend less time guessing and more time delivering.</p>
+      <p>We write from real projects: how to avoid re-rendering, where lip-sync breaks when you jump between tools like HeyGen or CapCut, and which export formats stay stable across translation. Expect concise steps, screenshots when they matter, and short debriefs on what changed versus Studio 2.x.</p>
+      <ul>
+        <li>Copy-paste presets for voice cloning, dubbing, and safety blocklists.</li>
+        <li>Caption practices that keep timing tight when you recut or translate.</li>
+        <li>Avatar handoffs: when to keep stems, when to flatten a mix.</li>
+        <li>Checklists so editors and PMs can review quality quickly.</li>
+      </ul>
+      <p>If you want a workflow tested, tell us which tools you use and the target languages. We publish benchmarks, SRT templates, and minimal setups that small teams can replicate without extra plugins.</p>
+    </section>
+
+    <section class="posts-grid">
+      <article class="card">
+        <h2><a href="/blog/voice-to-avatar-2025">Voice → avatar: Studio 3.0 + HeyGen/CapCut workflow (2025)</a></h2>
+        <p>Lower latency voices, cleaner dubbing, and how to keep lip-sync when moving tracks into avatar videos.</p>
+        <p class="meta"><time datetime="2025-02-15">Feb 15, 2025</time> · ≈12–14 min read</p>
+      </article>
+    </section>
+
+    <section class="content-block">
+      <h2>What we cover</h2>
+      <p>ElevenLabs Studio 3.0 changed how we handle timing, loudness, and safety filters. Each guide shows the exact sliders, SSML prompts, and export settings we used so you can match results without trial and error. We also keep track of which browser builds and GPU instances stayed stable during multi-hour renders.</p>
+      <p>You will find side-by-side audio snippets, sample SRTs, and JSON presets for cloning and dubbing. We document where to cut pauses, when to regenerate a segment, and how to avoid repeating phonemes when you concatenate exports from different tools. When we reference third-party tools (CapCut, Descript, HeyGen, Premiere Pro), we call out the version and the defaults we modified.</p>
+      <ul>
+        <li>Voice builds: warmth versus clarity, and how to suppress breaths without flattening delivery.</li>
+        <li>Dubbing for multi-lingual videos: keeping in-sync captions after time-stretching or speed ramps.</li>
+        <li>Avatar delivery: how to hand off stems to an avatar tool without losing volume consistency.</li>
+        <li>Compliance basics: handling consent text, sensitive words, and reviewer checklists for sign-off.</li>
+      </ul>
+    </section>
+
+    <section class="content-block">
+      <h2>Example workflows we benchmark</h2>
+      <p>We test scripts ranging from 30-second product explainers to 8-minute training modules. For each scenario we record render times, word error rate on translated captions, and listener fatigue scores from test audiences. If a step adds overhead that a small team cannot absorb, we flag it and offer a faster alternative.</p>
+      <p>Common workflows include: re-voicing a webinar and cutting into short clips, producing safety-compliant onboarding voiceovers in multiple languages, and turning podcast narration into avatar shorts for social distribution. Each walkthrough ends with a downloadable package: the SSML prompt, the mixdown order, and the caption export we delivered.</p>
+    </section>
+
+    <section class="content-block faq">
+      <h2>FAQ</h2>
+      <h3>How many words do I need for natural pacing?</h3>
+      <p>For English and French we target 140–160 words per minute with a 12–18% pause ratio. The presets we share keep that pacing so captions stay aligned even if you trim filler sentences later.</p>
+      <h3>Do you keep stems or just the final mix?</h3>
+      <p>We keep stems until the avatar or video platform accepts a locked mix. It prevents lip-sync drift when you re-export, and lets you drop music or SFX without regenerating the voice.</p>
+      <h3>What if I only have subtitles?</h3>
+      <p>You can paste SRT or VTT text into the SSML templates we provide. The guides show where to insert pause markers so the regenerated voice matches the timing of your existing captions.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p>&copy; 2025 Voiceover Captions AI. All rights reserved.</p>
+      </div>
+      <div>
+        <a href="/legal-notice">Legal notice</a> ·
+        <a href="/privacy-policy">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

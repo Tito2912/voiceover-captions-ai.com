@@ -1,0 +1,29 @@
+# Voiceover Captions AI
+
+> Voiceover Captions AI showcases ElevenLabs Studio 3.0 workflows for realistic multilingual voiceovers, dubbing, and captions.
+
+This site curates product overviews, setup guides, and compliance policies for audio/video localization. Use the links below for the fastest LLM-ready references. Crawling guidance:
+- Allowed: /
+- Disallowed: /data/, /tmp/, /private/
+- Crawl-delay: 2 seconds
+- Sitemap: https://voiceover-captions-ai.com/sitemap.xml
+- Contact: mailto:contact.ecomshopfrance@gmail.com
+- Owner: Voiceover Captions AI
+- Policy: https://voiceover-captions-ai.com/privacy-policy
+- Last-Modified: 2025-12-08
+
+## Core pages
+
+- [Homepage](https://voiceover-captions-ai.com/index.html): ElevenLabs Studio 3.0 overview and primary calls-to-action.
+- [Blog index](https://voiceover-captions-ai.com/blog/): Latest guides and product updates.
+- [Voice to avatar 2025 guide](https://voiceover-captions-ai.com/blog/voice-to-avatar-2025): Steps for building avatars with voice cloning.
+
+## Policies
+
+- [Privacy policy](https://voiceover-captions-ai.com/privacy-policy.html): Data usage and consent details.
+- [Legal notice](https://voiceover-captions-ai.com/legal-notice.html): Ownership and compliance information.
+- [Robots.txt](https://voiceover-captions-ai.com/robots.txt): Crawling directives for web bots.
+
+## Optional
+
+- [Sitemap XML](https://voiceover-captions-ai.com/sitemap.xml): Full list of indexable URLs if deeper crawling is needed.

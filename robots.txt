@@ -1,0 +1,52 @@
+# robots.txt - Voiceover Captions AI (Bing-safe)
+# Updated: 2025-12-05
+
+# Defaults
+User-agent: *
+Allow: /
+Disallow: /fr/admin/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /data/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /*.env
+Disallow: /*.ini
+Disallow: /*.log
+Disallow: /*.sql
+Disallow: /*.zip
+Disallow: /*.bak
+Disallow: /*?*
+Disallow: /search
+Disallow: /search/
+
+Sitemap: https://voiceover-captions-ai.com/sitemap.xml
+
+# Bing
+User-agent: bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yandex (clean-param removed to avoid Bing parser errors)
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Aggressive scrapers
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: PetalBot
+Disallow: /
+User-agent: MauiBot
+Disallow: /

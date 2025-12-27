@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElevenLabs 3.0 + HeyGen: 2025 voice-to-avatar settings</title>
+  <meta name="description" content="Tested workflow: ElevenLabs Studio 3.0 voices and dubbing, then avatar videos with stable lip-sync. Settings, mixing tips, and export checklist.">
+  <link rel="canonical" href="https://voiceover-captions-ai.com/blog/voice-to-avatar-2025">
+  <link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/blog/voice-to-avatar-2025">
+  <link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/blog/voix-avatar-2025">
+  <link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/blog/voice-to-avatar-2025">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://voiceover-captions-ai.com/blog/voice-to-avatar-2025">
+  <meta property="og:title" content="ElevenLabs 3.0 + HeyGen: 2025 voice-to-avatar settings">
+  <meta property="og:description" content="Lower latency voices, safer cloning, and lip-sync that survives avatar translation. Full settings and export checklist.">
+  <meta property="og:image" content="https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ElevenLabs 3.0 + HeyGen: 2025 voice-to-avatar settings">
+  <meta name="twitter:description" content="Settings for ElevenLabs voices that stay synced inside avatar videos.">
+  <meta name="twitter:image" content="https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg">
+
+  <link rel="stylesheet" href="/assets/styles.min.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body class="blog-article">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Voiceover Captions AI — Home">
+        <img src="/images/voiceover-captions-ai-logo.png" alt="Voiceover Captions AI logo" width="160" height="36">
+        <span class="visually-hidden">Voiceover Captions AI homepage</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/privacy-policy">Privacy</a></li>
+          <li class="lang">
+            <strong>English</strong> | <a href="/fr/blog/voix-avatar-2025" hreflang="fr">French version</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container article">
+    <p class="article-date">Updated Feb 15, 2025</p>
+    <h1>Voice → avatar workflow 2025: ElevenLabs Studio 3.0 + HeyGen</h1>
+    <p class="intro">We built a full pipeline: record/clone in ElevenLabs Studio 3.0, dub in multiple languages, then feed the tracks into an avatar generator without losing lip-sync. Here are the settings and the export checklist.</p>
+    <p class="note">Tests were run on Studio 3.0 late-2024 models with 48 kHz WAV exports, then rendered in HeyGen and CapCut using translation and lip-sync enabled.</p>
+    <p>Use this as a repeatable template. Every step below is tested on short hooks (30–45 seconds) and mid-form explainers (4–8 minutes) so you can see where sync drifts and how to fix it quickly.</p>
+
+    <h2>Baseline preset we keep loaded in Studio 3.0</h2>
+    <p>Start with one consistent preset so you’re not guessing per language. This is the build that survived the most tool handoffs:</p>
+    <ul class="checklist">
+      <li>Voice settings: Stability 62–68, Clarity + Similarity 42–48, Style exaggeration off.</li>
+      <li>Safety: Watermark on, blocklist for brands/medical terms, “preserve punctuation” enabled for dubbing.</li>
+      <li>Input normalisation: Loudness -16 LUFS with -3 dB peak ceiling; de-ess at 6–8 kHz, light gate at -38 dB.</li>
+      <li>Export: WAV 48 kHz mono for voice; keep stems for music/SFX if you’ll remix later.</li>
+    </ul>
+
+    <h2>What changed in Studio 3.0</h2>
+    <ul>
+      <li>Lower latency on short clips, steadier consonants, fewer duplicated phonemes on concatenated exports.</li>
+      <li>Watermark on by default; optional blocked phrases for brand names and compliance terms.</li>
+      <li>Dubbing preserves punctuation and pauses better than 2024, so captions stay closer to source timing.</li>
+      <li>Stems export (voice/ambience) for cleaner mixing and easier last-mile tweaks in your NLE.</li>
+    </ul>
+
+    <h2>Capture and cleanup before cloning</h2>
+    <ol>
+      <li>Record 20–40 seconds of clean tone per speaker. Avoid room tone longer than two seconds so the model doesn’t learn extra noise.</li>
+      <li>Normalise to -16 LUFS with a transparent limiter; trim mouth clicks under -42 dB to avoid robotic tails after translation.</li>
+      <li>Add 200 ms of silence at head and tail; Studio 3.0 keeps those pauses, which helps captions align in later cuts.</li>
+      <li>Run a short listen test on plosives (“p/b/t”) and fricatives (“s/f”) before cloning. If they splash, redo the take instead of over-EQing.</li>
+    </ol>
+
+    <h2>Recommended dubbing settings</h2>
+    <ol>
+      <li>Keep watermark on; add sensitive names to the blocklist so the translator never rewrites them.</li>
+      <li>Enable “preserve punctuation”; manually tighten any pause longer than 900 ms on short hooks.</li>
+      <li>For multilingual runs, generate EN → FR → ES in one session so the tone stays consistent; DE/PL benefit from a -2% tempo reduction.</li>
+      <li>Export WAV + SRT per language, plus stems when music/SFX need to be remixed downstream.</li>
+    </ol>
+
+    <h2>Step-by-step dubbing workflow</h2>
+    <ol>
+      <li>Drop your cleaned script or SRT into Studio 3.0; keep sentences under 18 words for avatar tools that struggle with long visemes.</li>
+      <li>Render a reference pass, mark any phoneme repeats, then regenerate only those lines. Avoid whole-paragraph re-renders.</li>
+      <li>Export SRT with original timecodes. If you retime in CapCut/Descript later, keep a copy of this “source SRT” for back-sync.</li>
+      <li>Label files with <code>lang_version_scene_take.wav</code> so the avatar tool and NLE stay aligned.</li>
+    </ol>
+
+    <h2>Avatar handoff</h2>
+    <p>Import the clean WAV into <a href="https://avatar-video-ai.com/" target="_blank" rel="noopener">an avatar video tool</a> and let it handle translation/lip-sync. Tests: EN→FR→ES stayed synced on short hooks; DE needed one manual retime for plosives.</p>
+    <ul>
+      <li>Disable auto-normalise inside the avatar tool if you already mastered to -16 LUFS; double-normalising adds pumping.</li>
+      <li>Keep viseme smoothing at default; cranking it up makes consonants drift out of sync after translation.</li>
+      <li>For portrait avatars, avoid jump cuts tighter than 6 frames; the mouth pose resets and looks like a glitch.</li>
+    </ul>
+
+    <h2>Export recipe: Studio → HeyGen → CapCut</h2>
+    <ol>
+      <li>Studio 3.0: Export WAV 48 kHz mono + SRT; keep stems if you plan to add music later.</li>
+      <li>HeyGen: Import WAV, set language to match file, leave lip-sync strength at default. Render a 1080p draft to inspect mouth shapes.</li>
+      <li>CapCut: Swap in the final 4K render only after checking SRT against the draft. Apply light compression (-2 dB makeup, ratio 2:1) if you add music.</li>
+      <li>Final QC: Peaks below -1 dBFS; SRT lines under 42 characters; no brand terms translated; visual frames free of jump-cut mouth resets.</li>
+    </ol>
+
+    <h2>Checklist before export</h2>
+    <ul>
+      <li>Waveform peaks below -1 dBFS; loudness -16 LUFS ±1; no broadband hiss above -55 dB in the tail.</li>
+      <li>SRT lines under 42 characters; two lines max; no orphaned punctuation after translation.</li>
+      <li>For multilingual, verify brand terms are not auto-translated and diacritics render correctly in the avatar output.</li>
+      <li>Export 1080p draft from the avatar tool, then final 4K once timing is locked; archive stems for remix requests.</li>
+    </ul>
+
+    <h2>Common failure modes (and fixes)</h2>
+    <ul>
+      <li><strong>Choppy plosives after translation:</strong> Drop clarity to 40–42 and regenerate the affected line only.</li>
+      <li><strong>Captions drift mid-sentence:</strong> Split the sentence into two lines in Studio, regenerate, keep the SRT split.</li>
+      <li><strong>Avatar mouth lags on jump cuts:</strong> Insert a 6–8 frame pre-roll of silence before the line; keeps visemes in sync.</li>
+      <li><strong>Music pumping:</strong> Disable per-track normalisation in the avatar tool; compress in CapCut/Premiere instead.</li>
+    </ul>
+
+    <h2>FAQ</h2>
+    <ul>
+      <li><strong>Does the watermark stay?</strong> Yes by default; remove only if you own rights.</li>
+      <li><strong>Which languages stayed in sync?</strong> EN, FR, ES stable; DE needs a quick review.</li>
+      <li><strong>Music bed?</strong> Add after avatars are rendered to avoid ducking issues.</li>
+    </ul>
+
+    <h2>Templates you can copy</h2>
+    <p>Paste this timing-safe SRT skeleton into Studio before dubbing; adjust only the text to keep visemes predictable:</p>
+<pre><code>1
+00:00:00,000 --> 00:00:03,200
+Hook text here, under 18 words.
+
+2
+00:00:03,400 --> 00:00:07,000
+Keep pauses short; avoid stacked commas.
+</code></pre>
+
+    <p class="disclosure">Affiliate transparency: some links may earn a commission at no extra cost to you.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p>&copy; 2025 Voiceover Captions AI. All rights reserved.</p>
+      </div>
+      <div>
+        <a href="/legal-notice">Legal notice</a> ·
+        <a href="/privacy-policy">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

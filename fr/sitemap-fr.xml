@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Accueil FR -->
+  <url>
+    <loc>https://voiceover-captions-ai.com/fr/</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/"/>
+    <image:image>
+      <image:loc>https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg</image:loc>
+      <image:title>ElevenLabs Studio 3.0 - Générateur de voix IA</image:title>
+      <image:caption>Créez des voix IA réalistes avec ElevenLabs Studio 3.0</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Pages légales FR -->
+  <url>
+    <loc>https://voiceover-captions-ai.com/fr/mentions-legales</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/legal-notice"/>
+  </url>
+
+  <url>
+    <loc>https://voiceover-captions-ai.com/fr/politique-de-confidentialite</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/politique-de-confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/privacy-policy"/>
+  </url>
+
+  <!-- Vidéo (embed YouTube) -->
+  <url>
+    <loc>https://voiceover-captions-ai.com/fr/</loc>
+    <lastmod>2025-09-23</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://voiceover-captions-ai.com/images/miniature-youtube-elevenlabs-studio-3.0.jpg</video:thumbnail_loc>
+      <video:title>Vidéo de démonstration ElevenLabs Studio 3.0</video:title>
+      <video:description>Découvrez comment utiliser ElevenLabs Studio 3.0 pour des voix-off professionnelles.</video:description>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/7aJwljLY0hg</video:player_loc>
+      <video:duration>180</video:duration>
+      <video:publication_date>2024-01-15T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+</urlset>

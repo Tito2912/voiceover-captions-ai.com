@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Voiceover & Captions AI | Workflows ElevenLabs 3.0</title>
+  <meta name="description" content="Guides pratiques ElevenLabs Studio 3.0 : voix, doublage, sous-titres et vidéos avatar.">
+  <link rel="canonical" href="https://voiceover-captions-ai.com/fr/blog/">
+  <link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/blog/">
+  <link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/blog/">
+  <link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/blog/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://voiceover-captions-ai.com/fr/blog/">
+  <meta property="og:title" content="Blog — Voiceover & Captions AI | Workflows ElevenLabs 3.0">
+  <meta property="og:description" content="Voix, doublage, sous-titres et workflows avatar avec ElevenLabs Studio 3.0.">
+  <meta property="og:image" content="https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog — Voiceover & Captions AI">
+  <meta name="twitter:description" content="Guides voix, doublage, sous-titres, avatars (ElevenLabs 3.0).">
+  <meta name="twitter:image" content="https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg">
+
+  <link rel="stylesheet" href="/assets/styles.min.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body class="blog-hub">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/fr/" aria-label="Voiceover Captions AI — Accueil">
+        <img src="/images/voiceover-captions-ai-logo.png" alt="Voiceover Captions AI logo" width="160" height="36">
+        <span class="visually-hidden">Accueil Voiceover Captions AI</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><strong>Blog</strong></li>
+          <li><a href="/fr/politique-de-confidentialite">Confidentialité</a></li>
+          <li class="lang">
+            <strong>Français</strong> | <a href="/blog/" hreflang="en">English version</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Blog — voix, doublage et captions avec ElevenLabs 3.0</h1>
+      <p class="lead">Guides applicatifs pour créer des voix, doubler vos vidéos et garder un lip-sync propre dans les avatars.</p>
+    </header>
+
+    <section class="intro">
+      <p>Ce blog s’adresse aux équipes marketing, formateurs produit et créateurs qui ont besoin de voix propres et de sous-titres fiables sans ajouter des heures de post-prod. Chaque article fournit des réglages à copier-coller dans ElevenLabs Studio 3.0 et une checklist pour valider la qualité avant export.</p>
+      <p>Nous partons de cas concrets : comment éviter de relancer un rendu, où le lip-sync casse quand on passe de HeyGen à CapCut, et quels formats restent stables après traduction. Vous trouverez des étapes courtes, des captures quand elles sont utiles, et un rappel de ce qui change par rapport à Studio 2.x.</p>
+      <ul>
+        <li>Presets prêts à l’emploi pour clonage, doublage et listes de mots bloqués.</li>
+        <li>Bonnes pratiques sous-titres pour garder le timing lors d’un recut.</li>
+        <li>Hand-off avatars : quand garder les stems, quand aplatir un mix.</li>
+        <li>Checklists pour que monteur et PM vérifient vite la livraison.</li>
+      </ul>
+      <p>Besoin d’un test précis ? Dites-nous vos outils et langues cibles. Nous publions aussi des benchmarks, des modèles SRT et des setups minimalistes que les petites équipes peuvent répliquer sans plugins.</p>
+    </section>
+
+    <section class="posts-grid">
+      <article class="card">
+        <h2><a href="/fr/blog/voix-avatar-2025">Pipeline voix → avatar : ElevenLabs 3.0 + HeyGen (2025)</a></h2>
+        <p>Latence réduite, doublage plus propre et lip-sync qui tient dans les vidéos avatar. Réglages et checklist d’export.</p>
+        <p class="meta"><time datetime="2025-02-15">15 fév. 2025</time> · ≈12–14 min de lecture</p>
+      </article>
+    </section>
+
+    <section class="content-block">
+      <h2>Ce que vous trouverez</h2>
+      <p>ElevenLabs Studio 3.0 a changé notre façon de gérer le timing, le loudness et les filtres de sécurité. Chaque guide montre les curseurs, prompts SSML et réglages d’export utilisés, pour reproduire le résultat sans tâtonner. Nous suivons aussi les versions navigateur et les instances GPU qui restent stables sur des rendus de plusieurs heures.</p>
+      <p>Vous verrez des extraits audio comparés, des SRT d’exemple et des presets JSON pour clonage et doublage. Nous précisons où couper les silences, quand régénérer un segment et comment éviter les phonèmes répétés quand on assemble des exports venant d’outils différents. Lorsqu’on cite un outil tiers (CapCut, Descript, HeyGen, Premiere Pro), nous indiquons la version et les valeurs par défaut modifiées.</p>
+      <ul>
+        <li>Voix : chaleur vs clarté, suppression des souffles sans écraser le débit.</li>
+        <li>Doublage multilingue : garder des sous-titres synchro après time-stretch ou speed ramp.</li>
+        <li>Livraison avatar : hand-off des stems sans perdre la cohérence de volume.</li>
+        <li>Conformité : gestion du consentement, mots sensibles, checklist revue avant livraison.</li>
+      </ul>
+    </section>
+
+    <section class="content-block">
+      <h2>Workflows que nous benchmarkons</h2>
+      <p>Nous testons des scripts de 30 secondes jusqu’à des modules de formation de 8 minutes. Pour chaque scénario, nous notons le temps de rendu, le taux d’erreur sur les captions traduites et la fatigue d’écoute mesurée sur un panel. Si une étape ajoute une charge ingérable pour une petite équipe, nous proposons une alternative plus rapide.</p>
+      <p>Parmi les cas fréquents : re-voicer un webinar puis découper en clips courts, produire des voiceovers d’onboarding conformes en plusieurs langues, transformer une narration de podcast en capsules avatar pour les réseaux. Chaque walkthrough se termine avec un package téléchargeable : prompt SSML, ordre de mixage et export de sous-titres livré.</p>
+    </section>
+
+    <section class="content-block faq">
+      <h2>FAQ</h2>
+      <h3>Combien de mots pour un rythme naturel ?</h3>
+      <p>En anglais et français, nous visons 140–160 mots par minute avec 12–18 % de pauses. Les presets partagés gardent ce rythme pour que les sous-titres restent alignés même si vous coupez des phrases ensuite.</p>
+      <h3>Faut-il garder les stems ou seulement le mix final ?</h3>
+      <p>Nous gardons les stems jusqu’à ce que la plateforme avatar ou vidéo accepte un mix verrouillé. Cela évite les dérives de lip-sync en réexport, et permet de retirer musique ou SFX sans régénérer la voix.</p>
+      <h3>Et si je n’ai que des sous-titres ?</h3>
+      <p>Collez votre SRT ou VTT dans les templates SSML fournis. Les guides montrent où placer les marqueurs de pause pour que la voix régénérée colle au timing de vos sous-titres existants.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p>&copy; 2025 Voiceover Captions AI. Tous droits réservés.</p>
+      </div>
+      <div>
+        <a href="/fr/mentions-legales">Mentions légales</a> ·
+        <a href="/fr/politique-de-confidentialite">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

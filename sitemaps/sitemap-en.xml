@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Homepage (x-default + EN) -->
+  <url>
+    <loc>https://voiceover-captions-ai.com/</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/"/>
+    <image:image>
+      <image:loc>https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg</image:loc>
+      <image:title>ElevenLabs Studio 3.0 - AI Voice Generator</image:title>
+      <image:caption>Create realistic AI voices with ElevenLabs Studio 3.0</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog pages -->
+  <url>
+    <loc>https://voiceover-captions-ai.com/blog/</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/blog/"/>
+  </url>
+
+  <url>
+    <loc>https://voiceover-captions-ai.com/blog/voice-to-avatar-2025</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/blog/voice-to-avatar-2025"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/blog/voix-avatar-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/blog/voice-to-avatar-2025"/>
+  </url>
+
+  <!-- Legal pages -->
+  <url>
+    <loc>https://voiceover-captions-ai.com/legal-notice</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/legal-notice"/>
+  </url>
+
+  <url>
+    <loc>https://voiceover-captions-ai.com/privacy-policy</loc>
+    <lastmod>2025-09-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/politique-de-confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/privacy-policy"/>
+  </url>
+
+  <!-- Video (YouTube embed only; no content_loc to watch page) -->
+  <url>
+    <loc>https://voiceover-captions-ai.com/</loc>
+    <lastmod>2025-09-23</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://voiceover-captions-ai.com/images/miniature-youtube-elevenlabs-studio-3.0EN.jpg</video:thumbnail_loc>
+      <video:title>ElevenLabs Studio 3.0 Demo Video</video:title>
+      <video:description>Watch how to use ElevenLabs Studio 3.0 for professional voiceovers.</video:description>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/FrfL2Cplnc0</video:player_loc>
+      <video:duration>180</video:duration>
+      <video:publication_date>2024-01-15T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+</urlset>

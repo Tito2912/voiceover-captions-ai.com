@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez ElevenLabs Studio 3.0, générateur de voix IA réalistes pour voix-off, doublage et contenu audio multilingue. Essayez-le gratuitement.">
+    <meta name="keywords" content="elevenlabs, générateur de voix ia, texte en parole, clonage de voix, voiceover, doublage, création audio">
+    <meta name="author" content="Voiceover Captions AI">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://voiceover-captions-ai.com/fr/">
+    <meta property="og:title" content="ElevenLabs Studio 3.0 — Générateur de voix IA avancé">
+    <meta property="og:description" content="Découvrez ElevenLabs Studio 3.0, générateur de voix IA réalistes pour voix-off, doublage et contenu audio multilingue. Essayez-le gratuitement.">
+    <meta property="og:image" content="https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://voiceover-captions-ai.com/fr/">
+    <meta property="twitter:title" content="ElevenLabs Studio 3.0 — Générateur de voix IA avancé">
+    <meta property="twitter:description" content="Découvrez ElevenLabs Studio 3.0, générateur de voix IA réalistes pour voix-off, doublage et contenu audio multilingue. Essayez-le gratuitement.">
+    <meta property="twitter:image" content="https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg">
+    
+    <!-- Canonical & Alternate URLs -->
+    <link rel="canonical" href="https://voiceover-captions-ai.com/fr/">
+    <link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/">
+    <link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/">
+    <link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/assets/styles.min.css" as="style" fetchpriority="high">
+    <link rel="preload" href="/images/elevenlabs-studio-3.0-hero-small.webp" as="image" fetchpriority="high">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/styles.min.css">
+    <style>
+      .hero-video-container{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;overflow:hidden;background:radial-gradient(circle at 20% 20%,rgba(37,99,235,0.2),transparent 35%),radial-gradient(circle at 80% 10%,rgba(245,158,11,0.2),transparent 30%),#0f172a;}
+      .video-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.75));z-index:1;}
+    </style>
+    
+    <title>ElevenLabs Studio 3.0 — Générateur de voix IA avancé & Clonage de voix</title>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ElevenLabs Studio 3.0",
+  "softwareVersion": "3.0",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Web",
+  "url": "https://voiceover-captions-ai.com/fr/",
+  "image": "https://voiceover-captions-ai.com/images/elevenlabs-studio-3.0.jpg",
+  "description": "Générateur de voix IA avancé pour des voix-off réalistes, le doublage et la création de contenus audio.",
+  "inLanguage": ["fr","en"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "ratingCount": 128
+  },
+  "publisher": { "@type": "Organization", "name": "ElevenLabs" },
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "0.00",
+    "highPrice": "99.00",
+    "offerCount": "3",
+    "offers": [
+      { "@type": "Offer", "name": "Gratuit", "url": "https://try.elevenlabs.io/q4qifzaxhkwg", "price": "0.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+      { "@type": "Offer", "name": "Créateur", "url": "https://try.elevenlabs.io/q4qifzaxhkwg", "price": "5.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+      { "@type": "Offer", "name": "Professionnel", "url": "https://try.elevenlabs.io/q4qifzaxhkwg", "price": "99.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+    ]
+  },
+  "sameAs": ["https://elevenlabs.io/"]
+}
+</script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Voiceover Captions AI",
+      "url": "https://voiceover-captions-ai.com",
+      "logo": "https://voiceover-captions-ai.com/images/voiceover-captions-ai-logo.png"
+    }
+    </script>
+</head>
+<body>
+    <!-- Bandeau cookies -->
+    <div id="cookie-consent" class="cookie-banner" aria-live="polite" role="dialog" aria-label="Consentement aux cookies" hidden>
+        <div class="cookie-content">
+            <p>Nous utilisons des cookies pour améliorer votre expérience et analyser notre trafic. En cliquant sur « Tout accepter », vous consentez à l’utilisation de tous les cookies. <a href="/fr/politique-de-confidentialite">Lire notre politique de confidentialité</a></p>
+            <div class="cookie-buttons">
+                <button id="cookie-necessary" class="cookie-btn necessary">Nécessaires uniquement</button>
+                <button id="cookie-accept" class="cookie-btn accept">Tout accepter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bannière suggestion de langue (pour visiteurs EN sur site FR) -->
+    <div id="language-suggestion" class="language-banner" hidden>
+        <div class="language-content">
+            <p>Prefer English? <a href="/" id="switch-to-english">View the English site</a></p>
+            <button id="dismiss-language" class="dismiss-btn" aria-label="Masquer la suggestion de langue">×</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/fr/" class="logo" aria-label="Accueil Voiceover Captions AI">
+                <picture>
+                    <source srcset="/images/elevenlabs-logo-black.svg" media="(prefers-color-scheme: light)">
+                    <img src="/images/voiceover-captions-ai-logo.png" alt="Voiceover Captions AI" width="150" height="32" loading="eager">
+                </picture>
+                <span class="visually-hidden">Accueil Voiceover Captions AI</span>
+            </a>
+            
+            <nav class="nav" aria-label="Navigation principale">
+                <button class="nav-toggle" aria-expanded="false" aria-label="Ouvrir/fermer le menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu">
+                    <li><a href="/fr/#features">Fonctionnalités</a></li>
+                    <li><a href="/fr/#use-cases">Cas d’usage</a></li>
+                    <li><a href="/fr/blog/">Blog</a></li>
+                    <li><a href="/fr/#pricing">Tarifs</a></li>
+                    <li><a href="/fr/#faq">FAQ</a></li>
+                    <li class="nav-cta"><a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" rel="noopener sponsored" class="btn btn-primary">Essayer ElevenLabs gratuitement</a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-switcher">
+                <span aria-current="true">Français</span>
+                <a href="/" hreflang="en" lang="en" aria-label="English version">English</a>
+            </div>
+        </div>
+    </header>
+
+<main>
+<!-- Section Hero (FR) -->
+<section class="hero" id="home">
+  <div class="hero-video-container">
+    <video class="hero-video" muted loop playsinline preload="none" poster="/images/elevenlabs-studio-3.0-hero-small.webp" aria-hidden="true">
+      <source data-src="/videos/hero-video-studio-3.0.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <h1>Transformez votre texte en voix naturelle avec l’IA</h1>
+      <p class="hero-subtitle">ElevenLabs Studio 3.0 offre les voix IA les plus réalistes pour les créateurs, réalisateurs et entreprises.</p>
+      <div class="hero-cta">
+        <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-large">Commencer gratuitement</a>
+        <a href="#demo" class="btn btn-secondary btn-large watch-demo">Voir la Vidéo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <span></span>
+  </div>
+</section>
+
+        <!-- Intro -->
+        <section class="intro section-padding">
+            <div class="container">
+                <div class="intro-content">
+                    <h2>Technologie vocale IA de nouvelle génération</h2>
+                    <p>ElevenLabs Studio 3.0 marque une avancée majeure en synthèse vocale, offrant une qualité et un contrôle inégalés pour tous vos besoins audio. Que vous créiez des voix-off pour des vidéos, produisiez des livres audio ou développiez des applications vocales, notre IA délivre une parole proche de l’humain dans 29 langues.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <span class="stat-number">29+</span>
+                            <span class="stat-label">Langues prises en charge</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Options de voix</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99%</span>
+                            <span class="stat-label">Qualité « naturelle »</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label">Utilisateurs dans le monde</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fonctionnalités -->
+        <section class="features section-padding" id="features">
+            <div class="container">
+                <h2>Fonctionnalités puissantes de Studio 3.0</h2>
+                <p class="section-intro">Découvrez une suite complète d’outils conçus pour la création vocale professionnelle</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="/images/icone-1.png" alt="Icône de Clonage de voix" width="48" height="48" loading="lazy">
+                        </div>
+                        <h3>Clonage de voix</h3>
+                        <p>Créez une réplique numérique de n’importe quelle voix avec quelques minutes d’échantillons audio pour un contenu véritablement personnalisé.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="/images/icone-2.png" alt="Icône de Support multilingue" width="48" height="48" loading="lazy">
+                        </div>
+                        <h3>Support multilingue</h3>
+                        <p>Générez une parole naturelle en 29 langues avec des accents authentiques et une expression émotionnelle.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="/images/icone-4.png" alt="Icône de Bibliothèque de voix" width="48" height="48" loading="lazy">
+                        </div>
+                        <h3>Bibliothèque de voix</h3>
+                        <p>Accédez à une collection grandissante de voix variées prêtes à l’emploi pour vos projets.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="/images/icone-5.png" alt="Icône d'Outils d’édition audio" width="48" height="48" loading="lazy">
+                        </div>
+                        <h3>Outils d’édition audio</h3>
+                        <p>Affinez la prononciation, ajustez le rythme et ajoutez des emphases pour des résultats parfaits à chaque fois.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="/images/icone-6.png" alt="Icône de Changement de voix" width="48" height="48" loading="lazy">
+                        </div>
+                        <h3>Changement de voix</h3>
+                        <p>Modifiez des enregistrements existants avec différentes caractéristiques vocales tout en préservant le contenu original.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="/images/icone-7.png" alt="Icône d'Accès API" width="48" height="48" loading="lazy">
+                        </div>
+                        <h3>Accès API</h3>
+                        <p>Intégrez la technologie ElevenLabs directement dans vos applications grâce à une API complète pour développeurs.</p>
+                    </div>
+                </div>
+                
+                <div class="features-cta">
+                    <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" rel="noopener sponsored" class="btn btn-primary">Explorer toutes les fonctionnalités</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Démo -->
+        <section class="demo section-padding" id="demo">
+            <div class="container">
+                <h2>Voyez ElevenLabs Studio 3.0 en action</h2>
+                <p class="section-intro">Regardez comment les professionnels utilisent la plateforme pour créer des voix-off impressionnantes</p>
+                
+                <div class="demo-container">
+                    <div class="demo-video">
+                        <div class="youtube-lite" data-id="7aJwljLY0hg" data-title="Démo ElevenLabs Studio 3.0">
+                            <img 
+                                src="/images/miniature-youtube-elevenlabs-studio-3.0.jpg" 
+                                alt="Démo ElevenLabs Studio 3.0" 
+                                loading="lazy"
+                                decoding="async"
+                                width="640" 
+                                height="360"
+                                class="youtube-thumbnail"
+                            >
+                            <div class="youtube-play-button" aria-label="Lire la vidéo"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-content">
+                        <h3>Des voix-off pro en quelques minutes</h3>
+                        <p>Une interface intuitive pour générer des voix-off de qualité studio sans expertise technique. Saisissez votre texte, choisissez une voix et téléchargez votre fichier audio.</p>
+                        
+                        <ul class="demo-features">
+                            <li>Aucun matériel d’enregistrement requis</li>
+                            <li>Ajustez le ton et le rythme avec des curseurs</li>
+                            <li>Exportez dans plusieurs formats audio</li>
+                            <li>Collaborez avec votre équipe</li>
+                        </ul>
+                        
+                        <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" rel="noopener sponsored" class="btn btn-primary">Essayer maintenant</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cas d’usage -->
+        <section class="use-cases section-padding" id="use-cases">
+            <div class="container">
+                <h2>Transformez votre flux de création de contenu</h2>
+                <p class="section-intro">ElevenLabs est plébiscité par des professionnels de nombreux secteurs</p>
+                
+                <div class="use-cases-grid">
+                    <div class="use-case">
+                        <div class="use-case-image">
+                            <picture>
+                                <img src="/images/capture-1.png" alt="Tableau de bord pour la création de contenu vidéo" loading="lazy" width="400" height="300">
+                            </picture>
+                        </div>
+                        <h3>Création de contenu vidéo</h3>
+                        <p>Les YouTubeurs, réalisateurs et marketeurs créent des voix-off engageantes pour des tutoriels, documentaires et vidéos promotionnelles.</p>
+                    </div>
+                    
+                    <div class="use-case">
+                        <div class="use-case-image">
+                            <picture>
+                                <img src="/images/capture-2.png" alt="Interface de production de livres audio" loading="lazy" width="400" height="300">
+                            </picture>
+                        </div>
+                        <h3>Production de livres audio</h3>
+                        <p>Éditeurs et auteurs génèrent des livres audio avec une narration homogène et de haute qualité, à moindre coût et en un temps record.</p>
+                    </div>
+                    
+                    <div class="use-case">
+                        <div class="use-case-image">
+                            <picture>
+                                <img src="/images/capture-3.png" alt="Module e-learning avec voix-off" loading="lazy" width="400" height="300">
+                            </picture>
+                        </div>
+                        <h3>Modules e-learning</h3>
+                        <p>Établissements et organismes de formation conçoivent des supports pédagogiques attractifs avec une narration claire et multilingue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tarifs -->
+        <section class="pricing section-padding" id="pricing">
+            <div class="container">
+                <h2>Des plans flexibles pour chaque créateur</h2>
+                <p class="section-intro">Choisissez l’offre qui vous convient : une formule gratuite et des mises à niveau abordables</p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Gratuit</h3>
+                        <div class="price">$0<span>/mois</span></div>
+                        <ul class="features-list">
+                            <li>10 000 caractères par mois</li>
+                            <li>Accès à 3 voix prédéfinies</li>
+                            <li>Jusqu’à 10 voix personnalisées</li>
+                            <li>Qualité de génération standard</li>
+                        </ul>
+                        <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" rel="noopener sponsored" class="btn btn-secondary">Commencer</a>
+                    </div>
+                    
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">Le plus populaire</div>
+                        <h3>Créateur</h3>
+                        <div class="price">$5<span>/mois</span></div>
+                        <ul class="features-list">
+                            <li>30 000 caractères par mois</li>
+                            <li>Accès à toutes les voix prédéfinies</li>
+                            <li>Créez jusqu’à 10 voix personnalisées</li>
+                            <li>Qualité de génération supérieure</li>
+                            <li>Licence commerciale</li>
+                        </ul>
+                        <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" rel="noopener sponsored" class="btn btn-primary">S’abonner</a>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <h3>Professionnel</h3>
+                        <div class="price">$99<span>/mois</span></div>
+                        <ul class="features-list">
+                            <li>500 000 caractères par mois</li>
+                            <li>Accès à toutes les voix prédéfinies</li>
+                            <li>Jusqu’à 100 voix personnalisées</li>
+                            <li>Qualité de génération maximale</li>
+                            <li>Licence commerciale</li>
+                            <li>Support prioritaire</li>
+                        </ul>
+                        <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" rel="noopener sponsored" class="btn btn-secondary">S’abonner</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-note">
+                    <p>Toutes les offres incluent l’accès complet aux fonctionnalités de ElevenLabs Studio 3.0. Les quotas de caractères se renouvellent chaque mois. <a href="https://elevenlabs.io/pricing" target="_blank" rel="noopener">Voir la tarification détaillée</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq section-padding" id="faq">
+            <div class="container">
+                <h2>Questions fréquentes</h2>
+                <p class="section-intro">Trouvez des réponses aux questions courantes sur ElevenLabs Studio 3.0</p>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Qu’est-ce que ElevenLabs Studio 3.0 ?
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>ElevenLabs Studio 3.0 est une plateforme avancée de génération de voix par IA qui convertit le texte en parole naturelle. Elle propose le clonage de voix, le support multilingue et des outils d’édition audio de niveau professionnel pour créateurs, entreprises et développeurs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Quelle est la précision du clonage de voix ?
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>La technologie de clonage ElevenLabs peut créer des répliques vocales très fidèles avec seulement quelques minutes d’audio d’exemple. L’IA capture les caractéristiques uniques, le timbre et les schémas de parole pour des résultats souvent indiscernables de la voix d’origine.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Quelles langues sont prises en charge ?
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>ElevenLabs prend en charge 29 langues dont l’anglais, l’espagnol, le français, l’allemand, l’italien, le portugais, le néerlandais, le polonais, l’arabe, le chinois, le japonais, le coréen et l’hindi, avec des accents authentiques et une intonation naturelle.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Existe-t-il une version gratuite ?
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, une formule gratuite inclut 10 000 caractères par mois, l’accès à 3 voix prédéfinies et la possibilité de créer jusqu’à 10 voix personnalisées. Idéal pour tester la plateforme et pour les petits projets.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Puis-je utiliser ElevenLabs à des fins commerciales ?
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, toutes les offres payantes incluent une licence commerciale permettant l’utilisation des audios générés dans des projets commerciaux. La formule gratuite est réservée à un usage personnel. Consultez les conditions d’utilisation pour les détails.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            En quoi ElevenLabs se distingue-t-il des autres services TTS ?
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>ElevenLabs se démarque par une qualité vocale exceptionnelle, une large palette émotionnelle et une intonation naturelle. Contrairement à de nombreux concurrents, la plateforme offre des fonctionnalités avancées (clonage de voix, contrôle fin des paramètres, support multilingue) pensées pour la création de contenus professionnels.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-cta">
+                    <p>Encore des questions ? <a href="https://help.elevenlabs.io/" target="_blank" rel="noopener">Consultez notre centre d’aide</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta section-padding">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Commencez à créer des voix-off professionnelles dès aujourd’hui</h2>
+                    <p>Rejoignez des milliers de créateurs qui font confiance à ElevenLabs pour leurs besoins audio</p>
+                    <a href="https://try.elevenlabs.io/q4qifzaxhkwg" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-large">Essayer ElevenLabs gratuitement</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter section-padding">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Restez informé des avancées en voix IA</h2>
+                    <p>Abonnez-vous à notre newsletter pour des conseils, tutoriels et actualités sur ElevenLabs et la technologie vocale.</p>
+                    
+                    <form id="newsletter-form" class="newsletter-form">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Adresse e-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+                            <div class="honeypot">
+                                <label for="website">Site web</label>
+                                <input type="text" id="website" name="website" tabindex="-1">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">S’abonner</button>
+                    </form>
+                    
+                    <p class="newsletter-note">Nous respectons votre vie privée. Désinscription à tout moment. <a href="/fr/politique-de-confidentialite">Politique de confidentialité</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/fr/" class="footer-logo">
+                        <img src="/images/voiceover-captions-ai-logo.png" alt="Voiceover Captions AI" width="150" height="32" loading="lazy">
+                        <span class="visually-hidden">Accueil Voiceover Captions AI</span>
+                    </a>
+                    <p>Votre partenaire pour la génération de voix IA et les solutions texte-vers-parole.</p>
+                    <div class="affiliation-badge">
+                        <small>Partenaire affilié non officiel ElevenLabs</small>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3>Ressources</h3>
+                    <ul>
+                        <li><a href="/fr/#features">Fonctionnalités</a></li>
+                        <li><a href="/fr/#use-cases">Cas d’usage</a></li>
+                        <li><a href="/fr/#pricing">Tarifs</a></li>
+                        <li><a href="/fr/#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="/fr/politique-de-confidentialite">Politique de confidentialité</a></li>
+                        <li><a href="/fr/mentions-legales">Mentions légales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3>Raccourcis</h3>
+                    <ul>
+                        <li><a href="https://help.elevenlabs.io/" target="_blank" rel="noopener">Centre d’aide</a></li>
+                        <li><a href="https://elevenlabs.io/" target="_blank" rel="noopener">ElevenLabs (officiel)</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Voiceover Captions AI. Tous droits réservés.</p>
+                    <div class="language-switcher-footer">
+                        <span aria-current="true">Français</span>
+                        <a href="/" hreflang="en" lang="en">English</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/main.min.js" defer></script>
+</body>
+</html>
