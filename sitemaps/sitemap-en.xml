@@ -18,6 +18,17 @@
       <image:title>ElevenLabs Studio 3.0 - AI Voice Generator</image:title>
       <image:caption>Create realistic AI voices with ElevenLabs Studio 3.0</image:caption>
     </image:image>
+
+    <!-- Video (YouTube embed only; no content_loc to watch page) -->
+    <video:video>
+      <video:thumbnail_loc>https://voiceover-captions-ai.com/images/miniature-youtube-elevenlabs-studio-3.0EN.jpg</video:thumbnail_loc>
+      <video:title>ElevenLabs Studio 3.0 Demo Video</video:title>
+      <video:description>Watch how to use ElevenLabs Studio 3.0 for professional voiceovers.</video:description>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/FrfL2Cplnc0</video:player_loc>
+      <video:duration>180</video:duration>
+      <video:publication_date>2024-01-15T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
 
   <!-- Blog pages -->
@@ -60,21 +71,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/politique-de-confidentialite"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/privacy-policy"/>
-  </url>
-
-  <!-- Video (YouTube embed only; no content_loc to watch page) -->
-  <url>
-    <loc>https://voiceover-captions-ai.com/</loc>
-    <lastmod>2025-09-23</lastmod>
-    <video:video>
-      <video:thumbnail_loc>https://voiceover-captions-ai.com/images/miniature-youtube-elevenlabs-studio-3.0EN.jpg</video:thumbnail_loc>
-      <video:title>ElevenLabs Studio 3.0 Demo Video</video:title>
-      <video:description>Watch how to use ElevenLabs Studio 3.0 for professional voiceovers.</video:description>
-      <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/FrfL2Cplnc0</video:player_loc>
-      <video:duration>180</video:duration>
-      <video:publication_date>2024-01-15T00:00:00+00:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
   </url>
 
 </urlset>
