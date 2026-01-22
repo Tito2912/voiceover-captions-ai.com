@@ -34,19 +34,3 @@ Crawl-delay: 1
 User-agent: Yandex
 Allow: /
 Crawl-delay: 2
-
-# Aggressive scrapers
-User-agent: AhrefsBot
-Disallow: /
-User-agent: SemrushBot
-Disallow: /
-User-agent: MJ12bot
-Disallow: /
-User-agent: DotBot
-Disallow: /
-User-agent: Bytespider
-Disallow: /
-User-agent: PetalBot
-Disallow: /
-User-agent: MauiBot
-Disallow: /
