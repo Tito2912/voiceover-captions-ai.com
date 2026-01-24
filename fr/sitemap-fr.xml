@@ -7,7 +7,7 @@
   <!-- Accueil FR -->
   <url>
     <loc>https://voiceover-captions-ai.com/fr/</loc>
-    <lastmod>2025-09-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/"/>
@@ -44,7 +44,7 @@
   <!-- Vidéo (embed YouTube) -->
   <url>
     <loc>https://voiceover-captions-ai.com/fr/</loc>
-    <lastmod>2025-09-23</lastmod>
+    <lastmod>2026-01-24</lastmod>
     <video:video>
       <video:thumbnail_loc>https://voiceover-captions-ai.com/images/miniature-youtube-elevenlabs-studio-3.0.jpg</video:thumbnail_loc>
       <video:title>Vidéo de démonstration ElevenLabs Studio 3.0</video:title>
