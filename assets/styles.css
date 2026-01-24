@@ -1683,6 +1683,19 @@ body.blog-article {
   color: var(--color-text-light);
 }
 
+/* AdSense blocks (blog pages) */
+.adsense-block {
+  margin: var(--spacing-xl) 0;
+  display: flex;
+  justify-content: center;
+}
+
+.adsense-block > .adsbygoogle {
+  width: 100%;
+  max-width: 728px;
+  min-height: 90px;
+}
+
 @media (max-width: 768px) {
   .site-header .header-inner {
     flex-direction: column;
