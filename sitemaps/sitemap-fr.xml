@@ -29,7 +29,10 @@
       <video:publication_date>2024-01-15T00:00:00+00:00</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://voiceover-captions-ai.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voiceover-captions-ai.com/de/"/>
+</url>
 
   <!-- Pages de Blog -->
   <url>
@@ -40,7 +43,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/blog/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://voiceover-captions-ai.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voiceover-captions-ai.com/de/blog/"/>
+</url>
 
   <url>
     <loc>https://voiceover-captions-ai.com/fr/blog/voix-avatar-2025</loc>
@@ -50,7 +56,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/blog/voice-to-avatar-2025"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/blog/voix-avatar-2025"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/blog/voice-to-avatar-2025"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://voiceover-captions-ai.com/es/blog/voice-to-avatar-2025"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voiceover-captions-ai.com/de/blog/voice-to-avatar-2025"/>
+</url>
 
   <!-- Pages légales FR -->
   <url>
@@ -61,7 +70,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/legal-notice"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/mentions-legales"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/legal-notice"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://voiceover-captions-ai.com/es/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voiceover-captions-ai.com/de/legal-notice"/>
+</url>
 
   <url>
     <loc>https://voiceover-captions-ai.com/fr/politique-de-confidentialite</loc>
@@ -71,6 +83,9 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://voiceover-captions-ai.com/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://voiceover-captions-ai.com/fr/politique-de-confidentialite"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://voiceover-captions-ai.com/privacy-policy"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://voiceover-captions-ai.com/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voiceover-captions-ai.com/de/privacy-policy"/>
+</url>
 
 </urlset>
