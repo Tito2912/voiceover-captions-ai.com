@@ -165,7 +165,13 @@
 
 [[redirects]]
   from = "/blog/voice-to-avatar-2025.html"
-  to = "/blog/voice-to-avatar-2025"
+  to = "/voice-to-avatar-2025"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/voice-to-avatar-2025"
+  to = "/voice-to-avatar-2025"
   status = 301
   force = true
 

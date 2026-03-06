@@ -1,68 +1,29 @@
-import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { ArticleLayout } from '@/components/ArticleLayout';
-import { getAllDocMetas, getDocMetaByRouteSegments, getPostByRouteSegments } from '@/lib/content';
-import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/schema';
-import { buildAlternates, getOpenGraphImage, getOpenGraphType, parseRobots } from '@/lib/seo';
-
-export async function generateMetadata(): Promise<Metadata> {
-  const meta = await getDocMetaByRouteSegments([]);
-  if (!meta) return {};
-
-  const all = await getAllDocMetas();
-  const ogImage = getOpenGraphImage(meta);
-  const canonical = meta.canonical ?? meta.routePath;
-
-  return {
-    title: meta.title,
-    description: meta.description,
-    alternates: buildAlternates(meta, all),
-    robots: parseRobots(meta.robots),
-    openGraph: {
-      type: getOpenGraphType(meta),
-      title: meta.title,
-      description: meta.description,
-      url: canonical,
-      images: [{ url: ogImage }],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: meta.title,
-      description: meta.description,
-      images: [ogImage],
-    },
-  };
-}
+import Link from 'next/link';
+import { getAllPosts } from '@/lib/content';
 
 export default async function HomePage() {
-  const post = await getPostByRouteSegments([]);
-  if (!post) return notFound();
-
-  const articleJsonLd = buildArticleJsonLd(post);
-  const breadcrumbJsonLd = buildBreadcrumbJsonLd(post);
+  const posts = await getAllPosts();
 
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      {post.faq?.length ? (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: post.faq.map((x) => ({
-                '@type': 'Question',
-                name: x.q,
-                acceptedAnswer: { '@type': 'Answer', text: x.a },
-              })),
-            }),
-          }}
-        />
-      ) : null}
+    <div className="stack">
+      <section className="hero">
+        <h1>AI voiceovers & captions (SEO-first)</h1>
+        <p>
+          Practical workflows, checklists and comparisons (with clean internal linking and schema).
+        </p>
+      </section>
 
-      <ArticleLayout post={post} />
-    </>
+      <section className="card">
+        <h2>Articles</h2>
+        <ul className="list">
+          {posts.map((p) => (
+            <li key={p.slug}>
+              <Link href={`/${p.slug}`}>{p.title}</Link>
+              <div className="muted">{p.description}</div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
   );
 }

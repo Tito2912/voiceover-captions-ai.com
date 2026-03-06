@@ -1,17 +1,18 @@
+import { getAllPosts } from '@/lib/content';
 import type { MetadataRoute } from 'next';
-import { getAllDocMetas } from '@/lib/content';
-import { SITE } from '@/lib/site';
-
-export const dynamic = 'force-static';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const metas = await getAllDocMetas();
-  const now = new Date().toISOString();
+  const baseUrl = 'https://voiceover-captions-ai.com';
+  const posts = await getAllPosts();
 
   return [
-    ...metas.map((m) => ({
-      url: new URL(m.canonical ?? m.routePath, SITE.baseUrl).toString(),
-      lastModified: m.updatedAt ?? m.date ?? now,
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+    },
+    ...posts.map((p) => ({
+      url: `${baseUrl}/${p.slug}`,
+      lastModified: new Date(p.updatedAt ?? p.date ?? new Date().toISOString()),
     })),
   ];
 }

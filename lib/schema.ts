@@ -1,13 +1,6 @@
 import type { Post } from '@/lib/types';
-import { homePath, normalizeLang, SITE } from '@/lib/site';
 
-const BASE_URL = SITE.baseUrl;
-const HOME_LABEL: Record<string, string> = {
-  fr: 'Accueil',
-  en: 'Home',
-  es: 'Inicio',
-  de: 'Startseite',
-};
+const BASE_URL = 'https://voiceover-captions-ai.com';
 
 export function buildArticleJsonLd(post: Post) {
   const url = new URL(post.canonical ?? `/${post.slug}`, BASE_URL).toString();
@@ -22,14 +15,12 @@ export function buildArticleJsonLd(post: Post) {
     mainEntityOfPage: url,
     datePublished: published,
     dateModified: modified,
-    author: [{ '@type': 'Organization', name: SITE.brandName }],
-    publisher: { '@type': 'Organization', name: SITE.brandName },
+    author: [{ '@type': 'Person', name: 'Voiceover Captions AI' }],
+    publisher: { '@type': 'Organization', name: 'Voiceover Captions AI' },
   };
 }
 
 export function buildBreadcrumbJsonLd(post: Post) {
-  const lang = normalizeLang(post.lang);
-  const homeUrl = new URL(homePath(lang), BASE_URL).toString();
   const url = new URL(post.canonical ?? `/${post.slug}`, BASE_URL).toString();
   return {
     '@context': 'https://schema.org',
@@ -38,8 +29,8 @@ export function buildBreadcrumbJsonLd(post: Post) {
       {
         '@type': 'ListItem',
         position: 1,
-        name: HOME_LABEL[lang] ?? 'Home',
-        item: homeUrl,
+        name: 'Home',
+        item: BASE_URL,
       },
       {
         '@type': 'ListItem',
