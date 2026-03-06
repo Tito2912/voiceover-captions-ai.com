@@ -1,0 +1,430 @@
+---
+title: "Locución y subtítulos: workflow (guía independiente) — ElevenLabs"
+description: "Guía independiente, paso a paso, para crear locuciones y subtítulos: guion, TTS (ElevenLabs), limpieza de audio, export SRT/VTT y QA."
+lang: "es"
+translationKey: "home"
+canonical: "/es"
+type: "page"
+updatedAt: "2026-02-21"
+---
+
+<section className="hero" id="home">
+  <div className="hero-video-container">
+    <video
+      aria-hidden="true"
+      className="hero-video"
+      loop
+      muted
+      playsInline
+      poster="/images/elevenlabs-studio-3.0-hero-small.webp"
+      preload="none"
+    >
+      <source data-src="/videos/hero-video-studio-3.0.mp4" type="video/mp4" />
+    </video>
+    <div className="video-overlay" />
+  </div>
+
+  <div className="container">
+    <div className="hero-content">
+      <h1>Convierte texto en voz natural con IA</h1>
+      <p className="hero-subtitle">
+        Guía independiente: crea un flujo reproducible de locución + subtítulos con ElevenLabs (guion → TTS → limpieza → SRT/VTT → QA).
+      </p>
+      <p className="hero-disclaimer">
+        <small>No es el sitio oficial de ElevenLabs. Algunos enlaces pueden ser de afiliación.</small>
+      </p>
+      <div className="hero-cta">
+        <a
+          className="btn btn-primary btn-large"
+          href="https://try.elevenlabs.io/q4qifzaxhkwg"
+          rel="noopener sponsored noreferrer"
+          target="_blank"
+        >
+          Empezar
+        </a>
+        <a className="btn btn-secondary btn-large watch-demo" href="#demo">
+          Ver vídeo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div aria-hidden="true" className="scroll-indicator">
+    <span />
+  </div>
+</section>
+
+<section className="intro section-padding">
+  <div className="container">
+    <div className="intro-content">
+      <h2>Un flujo reproducible para locución y subtítulos</h2>
+      <p>
+        Esta página se centra en los pasos que importan: escribir para voz, generar TTS, limpiar el audio, exportar el formato correcto y luego crear subtítulos (SRT/VTT) con una verificación rápida antes de publicar.
+      </p>
+      <div className="stats-grid">
+        <div className="stat">
+          <span className="stat-number">1</span>
+          <span className="stat-label">Escribir un guion para voz</span>
+        </div>
+        <div className="stat">
+          <span className="stat-number">2</span>
+          <span className="stat-label">Generar e iterar (TTS)</span>
+        </div>
+        <div className="stat">
+          <span className="stat-number">3</span>
+          <span className="stat-label">Limpiar audio para edición</span>
+        </div>
+        <div className="stat">
+          <span className="stat-number">4</span>
+          <span className="stat-label">Subtítulos + QA antes de publicar</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="features section-padding" id="features">
+  <div className="container">
+    <h2>Funciones clave para un buen workflow de locución</h2>
+    <p className="section-intro">Enfócate en calidad, control, seguridad y opciones de exportación.</p>
+
+    <div className="features-grid">
+      <div className="feature-card">
+        <div className="feature-icon">
+          <img alt="icono de cierre de voz" height="48" loading="lazy" src="/images/icone-1.png" width="48" />
+        </div>
+        <h3>Clonación de voz</h3>
+        <p>
+          Crea un modelo a partir de muestras de audio solo con consentimiento explícito (derechos + autorización). Mantén una revisión humana para evitar abusos.
+        </p>
+      </div>
+
+      <div className="feature-card">
+        <div className="feature-icon">
+          <img alt="icono de soporte multilingüe" height="48" loading="lazy" src="/images/icone-2.png" width="48" />
+        </div>
+        <h3>Soporte multilingüe</h3>
+        <p>
+          Genera voz en varios idiomas (la cobertura cambia). Prueba tu idioma y acento con un extracto corto antes de producir en volumen.
+        </p>
+      </div>
+
+      <div className="feature-card">
+        <div className="feature-icon">
+          <img alt="icono de la biblioteca de voz" height="48" loading="lazy" src="/images/icone-4.png" width="48" />
+        </div>
+        <h3>Biblioteca de voz</h3>
+        <p>Acceda a una creciente colección de voces diversas y prehechas para su uso inmediato en sus proyectos.</p>
+      </div>
+
+      <div className="feature-card">
+        <div className="feature-icon">
+          <img alt="Audio Editing Tools icon" height="48" loading="lazy" src="/images/icone-5.png" width="48" />
+        </div>
+        <h3>Herramientas de edición de audio</h3>
+        <p>Ajusta pronunciación, ritmo y énfasis para obtener un resultado más natural y consistente.</p>
+      </div>
+
+      <div className="feature-card">
+        <div className="feature-icon">
+          <img alt="ícono de cambio de voz" height="48" loading="lazy" src="/images/icone-6.png" width="48" />
+        </div>
+        <h3>Cambio de voz</h3>
+        <p>Modifique las grabaciones existentes con diferentes características de voz, preservando al mismo tiempo el contenido original.</p>
+      </div>
+
+      <div className="feature-card">
+        <div className="feature-icon">
+          <img alt="API icono de acceso" height="48" loading="lazy" src="/images/icone-7.png" width="48" />
+        </div>
+        <h3>Acceso a API</h3>
+        <p>Integra TTS en tus aplicaciones usando la API oficial (consulta documentación para endpoints y límites actualizados).</p>
+      </div>
+    </div>
+
+    <div className="features-cta">
+      <a className="btn btn-primary" href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">
+        Probar el workflow
+      </a>
+    </div>
+  </div>
+</section>
+
+<section className="demo section-padding" id="demo">
+  <div className="container">
+    <h2>Ver ElevenLabs en acción</h2>
+    <p className="section-intro">Mira una demo y luego aplica el workflow con tu propio guion.</p>
+
+    <div className="demo-container">
+      <div className="demo-video">
+        <div className="youtube-lite" data-id="FrfL2Cplnc0" data-title="Demo de ElevenLabs">
+          <img
+            alt="Demo de ElevenLabs"
+            className="youtube-thumbnail"
+            decoding="async"
+            height="360"
+            loading="lazy"
+            src="/images/miniature-youtube-elevenlabs-studio-3.0EN.jpg"
+            width="640"
+          />
+          <div aria-label="Jugar video" className="youtube-play-button" />
+        </div>
+      </div>
+
+      <div className="demo-content">
+        <h3>Cambios de voz profesionales en minutos</h3>
+        <p>
+          La interfaz permite generar locuciones rápido: pega tu texto, elige una voz, ajusta pronunciación y ritmo, y exporta audio limpio para edición.
+        </p>
+        <ul className="demo-features">
+          <li>No se necesita equipo de grabación</li>
+          <li>Ajuste el tono y el pacing con deslizadores</li>
+          <li>Exportar en múltiples formatos de audio</li>
+          <li>Colaborar con los miembros del equipo</li>
+        </ul>
+        <a className="btn btn-primary" href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">
+          Pruébalo tú mismo.
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="use-cases section-padding" id="use-cases">
+  <div className="container">
+    <h2>Transforma tu flujo de trabajo de creación de contenidos</h2>
+    <p className="section-intro">
+      La voz IA se usa en muchos sectores: elige un workflow que encaje con tus requisitos de calidad y revisión.
+    </p>
+    <div className="use-cases-grid">
+      <div className="use-case">
+        <div className="use-case-image">
+          <picture>
+            <img alt="Creación de contenido de vídeo dashboard" height="300" loading="lazy" src="/images/capture-1.png" width="400" />
+          </picture>
+        </div>
+        <h3>Creación de contenidos de vídeo</h3>
+        <p>YouTubers, cineastas y marketers utilizan ElevenLabs para crear atractivas voces para tutoriales, documentales y vídeos promocionales.</p>
+      </div>
+
+      <div className="use-case">
+        <div className="use-case-image">
+          <picture>
+            <img alt="Interfaz de producción de audiolibros" height="300" loading="lazy" src="/images/capture-2.png" width="400" />
+          </picture>
+        </div>
+        <h3>Producción de audiolibros</h3>
+        <p>Para narración larga, la consistencia es clave: mantén la voz estable, normaliza niveles y haz una QC humana antes de publicar.</p>
+      </div>
+
+      <div className="use-case">
+        <div className="use-case-image">
+          <picture>
+            <img alt="Módulo de aprendizaje electrónico con cambio de voz" height="300" loading="lazy" src="/images/capture-3.png" width="400" />
+          </picture>
+        </div>
+        <h3>Módulos de aprendizaje electrónico</h3>
+        <p>Para formación, prioriza claridad: frases cortas, ritmo constante y pronunciación coherente entre lecciones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="pricing section-padding" id="pricing">
+  <div className="container">
+    <h2>Cómo elegir un plan (los precios cambian)</h2>
+    <p className="section-intro">
+      Planes, cuotas y licencias cambian con el tiempo. Usa este checklist y confirma detalles en la página oficial.
+    </p>
+
+    <div className="pricing-grid">
+      <div className="pricing-card">
+        <h3>Gratis</h3>
+        <div className="price">
+          Consultar precios <span>sitio oficial</span>
+        </div>
+        <ul className="features-list">
+          <li>Ideal para probar voces y workflow</li>
+          <li>Confirma límites actuales (cuota/uso)</li>
+          <li>Haz una prueba completa (export + edición)</li>
+          <li>Valida pronunciación y ritmo</li>
+        </ul>
+        <a className="btn btn-secondary" href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">
+          Comiencen
+        </a>
+      </div>
+
+      <div className="pricing-card featured">
+        <div className="popular-badge">Más populares</div>
+        <h3>Creador</h3>
+        <div className="price">
+          Consultar precios <span>sitio oficial</span>
+        </div>
+        <ul className="features-list">
+          <li>Más uso para publicar regularmente</li>
+          <li>Compara opciones de voz y control</li>
+          <li>Revisa términos de licencia y créditos</li>
+          <li>Verifica API y límites si automatizas</li>
+        </ul>
+        <a className="btn btn-primary" href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">
+          Suscríbase ahora
+        </a>
+      </div>
+
+      <div className="pricing-card">
+        <h3>Profesional</h3>
+        <div className="price">
+          Consultar precios <span>sitio oficial</span>
+        </div>
+        <ul className="features-list">
+          <li>Más uso para long‑form o equipos</li>
+          <li>Revisa colaboración, soporte y control</li>
+          <li>Confirma términos para tu distribución</li>
+          <li>Planifica QA y seguridad en clonación</li>
+        </ul>
+        <a className="btn btn-secondary" href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">
+          Suscríbase ahora
+        </a>
+      </div>
+    </div>
+
+    <div className="pricing-note">
+      <p>
+        Verifica siempre planes y límites actuales en la página oficial. Compara minutos/mes, licencia, acceso a clonación, límites API y necesidades de equipo.{' '}
+        <a href="https://elevenlabs.io/pricing" rel="noopener noreferrer" target="_blank">
+          Ver precios oficiales
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section className="faq section-padding" id="faq">
+  <div className="container">
+    <h2>Preguntas frecuentes</h2>
+    <p className="section-intro">Respuestas rápidas sobre ElevenLabs, locución, subtítulos y clonación de voz responsable.</p>
+
+    <div className="faq-list">
+      <div className="faq-item">
+        <button aria-expanded="false" className="faq-question">
+          ¿Qué es ElevenLabs (Studio)?
+          <span aria-hidden="true" className="faq-icon" />
+        </button>
+        <div className="faq-answer">
+          <p>
+            ElevenLabs es una plataforma de texto a voz (TTS) y generación de voz para crear locuciones, narración y doblaje. Esta página es una guía independiente centrada en un flujo práctico (guion → TTS → limpieza → subtítulos → QA).
+          </p>
+        </div>
+      </div>
+
+      <div className="faq-item">
+        <button aria-expanded="false" className="faq-question">
+          ¿Qué tan precisa es la tecnología de clonación de voz?
+          <span aria-hidden="true" className="faq-icon" />
+        </button>
+        <div className="faq-answer">
+          <p>
+            La calidad depende del audio de origen (ruido, micro, consistencia) y del uso. Clona voces solo con consentimiento explícito (y derechos necesarios) y mantén una revisión humana para evitar errores o abusos.
+          </p>
+        </div>
+      </div>
+
+      <div className="faq-item">
+        <button aria-expanded="false" className="faq-question">
+          ¿Qué idiomas soporta ElevenLabs?
+          <span aria-hidden="true" className="faq-icon" />
+        </button>
+        <div className="faq-answer">
+          <p>La cobertura de idiomas y acentos cambia con el tiempo. Prueba con un extracto corto y consulta la documentación oficial para la lista actualizada.</p>
+        </div>
+      </div>
+
+      <div className="faq-item">
+        <button aria-expanded="false" className="faq-question">
+          ¿Hay una versión gratuita disponible?
+          <span aria-hidden="true" className="faq-icon" />
+        </button>
+        <div className="faq-answer">
+          <p>
+            Suele haber un plan gratuito o una prueba, pero los límites cambian. Revisa la página oficial de precios y haz una prueba completa (generación → export → edición → subtítulos).
+          </p>
+        </div>
+      </div>
+
+      <div className="faq-item">
+        <button aria-expanded="false" className="faq-question">
+          ¿Puedo usar ElevenLabs para fines comerciales?
+          <span aria-hidden="true" className="faq-icon" />
+        </button>
+        <div className="faq-answer">
+          <p>
+            El uso comercial depende del plan y de los términos de licencia. Revisa las condiciones oficiales antes de publicar (ads, audiolibros, trabajo para clientes) y asegúrate de tener derechos/consentimiento en cualquier voz clonada.
+          </p>
+        </div>
+      </div>
+
+      <div className="faq-item">
+        <button aria-expanded="false" className="faq-question">
+          ¿Cómo compara ElevenLabs con otros servicios de texto a palabra?
+          <span aria-hidden="true" className="faq-icon" />
+        </button>
+        <div className="faq-answer">
+          <p>
+            Compara herramientas con el mismo guion y una checklist: naturalidad, control (pronunciación, ritmo), latencia, formatos de exportación, licencia, API, cobertura de idiomas y controles de seguridad. No te quedes con claims de marketing: prueba lo que importa para tu workflow.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="faq-cta">
+      <p>
+        ¿Necesitas detalles oficiales?{' '}
+        <a href="https://help.elevenlabs.io/" rel="noopener noreferrer" target="_blank">
+          Visita el centro de ayuda de ElevenLabs
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section className="cta section-padding">
+  <div className="container">
+    <div className="cta-content">
+      <h2>¿Listo para probar el workflow?</h2>
+      <p>
+        Empieza con un guion corto, genera una muestra y valida audio + subtítulos antes de escalar.{' '}
+        <small>Nota: el botón puede ser un enlace de afiliación.</small>
+      </p>
+      <a className="btn btn-primary btn-large" href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="noopener sponsored noreferrer" target="_blank">
+        Probar ElevenLabs
+      </a>
+    </div>
+  </div>
+</section>
+
+<section className="newsletter section-padding">
+  <div className="container">
+    <div className="newsletter-content">
+      <h2>Manténgase actualizado en Tecnología de Voz de AI</h2>
+      <p>Suscríbete a nuestro boletín para consejos, tutoriales y noticias sobre OnceLabs y avances de voz AI.</p>
+      <form className="newsletter-form" id="newsletter-form">
+        <div className="form-group">
+          <label className="visually-hidden" htmlFor="email">
+            Dirección de correo electrónico
+          </label>
+          <input id="email" name="email" placeholder="Su dirección de correo electrónico" required type="email" />
+          <div className="honeypot">
+            <label htmlFor="website">Sitio web</label>
+            <input id="website" name="website" tabIndex={-1} type="text" />
+          </div>
+        </div>
+        <button className="btn btn-primary" type="submit">
+          Suscríbete
+        </button>
+      </form>
+      <p className="newsletter-note">
+        Respetamos su privacidad, descríbanse en cualquier momento. <a href="/es/privacy-policy">Política de privacidad</a>
+      </p>
+    </div>
+  </div>
+</section>

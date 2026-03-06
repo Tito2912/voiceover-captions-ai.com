@@ -1,89 +1,11 @@
-# ==========================================================================
-# Netlify config — Voiceover Captions AI (PROD)
-# ==========================================================================
-
 [build]
-  publish = "."
-  command = "echo 'Static site — no build step'"
+  command = "npm run build"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "18"
 
-# ==========================================================================
-# Security headers (safe defaults)
-# ==========================================================================
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=()"
-    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-
-# ==========================================================================
-# Caching
-#   - Assets: long cache + immutable (fingerprinting/ ?v=… recommandé)
-#   - HTML: cache court et revalidation
-# ==========================================================================
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/images/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/videos/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/*.html"
-  [headers.values]
-    Cache-Control = "public, max-age=3600, must-revalidate"
-
-# ==========================================================================
-# Content types utiles
-# ==========================================================================
-[[headers]]
-  for = "/sitemap.xml"
-  [headers.values]
-    Content-Type = "application/xml"
-
-[[headers]]
-  for = "/sitemaps/*"
-  [headers.values]
-    Content-Type = "application/xml"
-
-[[headers]]
-  for = "/robots.txt"
-  [headers.values]
-    Content-Type = "text/plain"
-
-# ==========================================================================
-# i18n — EN par défaut, FR si navigateur FR
-# (laisse la navigation explicite entre / et /fr/)
-# ==========================================================================
-[[redirects]]
-  from = "/"
-  to = "/index.html"
-  status = 200
-  conditions = { Language = ["en", "en-US", "en-GB", "en-*"] }
-
-[[redirects]]
-  from = "/"
-  to = "/fr/index.html"
-  status = 200
-  conditions = { Language = ["fr", "fr-FR", "fr-*"] }
-
-# ==========================================================================
-# Domaine canonique (quand tu pointeras le domaine)
-# ==========================================================================
+# Canonical host + HTTPS
 [[redirects]]
   from = "http://voiceover-captions-ai.com/*"
   to = "https://voiceover-captions-ai.com/:splat"
@@ -102,7 +24,97 @@
   status = 301
   force = true
 
-# Align extensionless URLs to canonical .html (hreflang self-reference)
+# Legacy + trailing slash cleanup (avoid duplicate URLs)
+[[redirects]]
+  from = "/blog/"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/"
+  to = "/fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/"
+  to = "/es"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/"
+  to = "/de"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/blog/"
+  to = "/fr/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/blog/"
+  to = "/es/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/blog/"
+  to = "/de/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/index.html"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/index.html"
+  to = "/fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/index.html"
+  to = "/es"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/index.html"
+  to = "/de"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr.html"
+  to = "/fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es.html"
+  to = "/es"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de.html"
+  to = "/de"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/legal-notice.html"
   to = "/legal-notice"
@@ -127,30 +139,79 @@
   status = 301
   force = true
 
-# ==========================================================================
-# Processing (minify)
-# ==========================================================================
-[[processing]]
-  for = "*.js"
-  [processing.options]
-    minify_js = true
+[[redirects]]
+  from = "/es/legal-notice.html"
+  to = "/es/legal-notice"
+  status = 301
+  force = true
 
-[[processing]]
-  for = "*.css"
-  [processing.options]
-    minify_css = true
+[[redirects]]
+  from = "/es/privacy-policy.html"
+  to = "/es/privacy-policy"
+  status = 301
+  force = true
 
-[[processing]]
-  for = "*.html"
-  [processing.options]
-    minify_html = true
+[[redirects]]
+  from = "/de/legal-notice.html"
+  to = "/de/legal-notice"
+  status = 301
+  force = true
 
-# Contexts
-[context.production.environment]
-  NODE_ENV = "production"
+[[redirects]]
+  from = "/de/privacy-policy.html"
+  to = "/de/privacy-policy"
+  status = 301
+  force = true
 
-[context.deploy-preview.environment]
-  NODE_ENV = "development"
+[[redirects]]
+  from = "/blog/voice-to-avatar-2025.html"
+  to = "/blog/voice-to-avatar-2025"
+  status = 301
+  force = true
 
-[context.branch-deploy.environment]
-  NODE_ENV = "development"
+[[redirects]]
+  from = "/fr/blog/voix-avatar-2025.html"
+  to = "/fr/blog/voix-avatar-2025"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/blog/voice-to-avatar-2025.html"
+  to = "/es/blog/voice-to-avatar-2025"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/blog/voice-to-avatar-2025.html"
+  to = "/de/blog/voice-to-avatar-2025"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+    X-Frame-Options = "DENY"
+
+[[headers]]
+  for = "/_next/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
