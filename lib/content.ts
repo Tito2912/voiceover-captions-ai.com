@@ -97,7 +97,6 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
         // (next-mdx-remote v6 defaults are safe; we keep it explicit)
         // @ts-expect-error - options are passed through
         blockDangerousJS: true,
-        // @ts-expect-error
         blockJS: true,
       },
     },
