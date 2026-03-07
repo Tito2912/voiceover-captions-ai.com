@@ -1,0 +1,189 @@
+---
+title: "ElevenLabs Scribe v2 (2026): transcription at scale for captions, clips and QA"
+description: "How to use Scribe v2 to transcribe faster with keyterm prompting, entity detection and multi-language audio—then turn transcripts into captions and reusable content."
+canonical: "/elevenlabs-scribe-v2-transcription-2026"
+type: "guide"
+updatedAt: "2026-03-07"
+primaryKeyword: "scribe v2 transcription"
+jumpLinks:
+  - href: "#what-is-scribe-v2"
+    label: "What is Scribe v2?"
+  - href: "#when-to-use-it"
+    label: "When to use it"
+  - href: "#keyterm-prompting"
+    label: "Keyterm prompting"
+  - href: "#entity-detection"
+    label: "Entity detection"
+  - href: "#multi-language-audio"
+    label: "Multi-language audio"
+  - href: "#captions-workflow"
+    label: "Captions workflow"
+  - href: "#qa-and-governance"
+    label: "QA & governance"
+  - href: "#faq"
+    label: "FAQ"
+quickAnswer:
+  - "Use Scribe v2 when you need reliable transcription at scale: clips, captions, search and QA."
+  - "Keyterm prompting biases transcription toward up to 100 context-aware terms (great for brands, names, jargon)."
+  - "Entity detection timestamps sensitive or important items (e.g., names, card numbers) so you can review or redact faster."
+internalLinks:
+  - href: "/ai-voiceover-captions-workflow"
+    anchor: "Voiceover + captions workflow (2026)"
+  - href: "/blog"
+    anchor: "Back to the blog hub"
+faq:
+  - q: "Is Scribe v2 only for English?"
+    a: "No—Scribe v2 supports smart multi-language transcription, including auto-detection of multiple languages in the same audio file. Always test your languages on a short sample because coverage and quality can change."
+  - q: "What is keyterm prompting?"
+    a: "It’s a way to bias transcription toward specific terms (brands, names, acronyms) using context-aware prompting—useful when standard keyword biasing misses your jargon."
+  - q: "What does entity detection do?"
+    a: "It can automatically detect and timestamp sensitive or important entities (e.g., names, credit card numbers). Use it to speed up review, redaction, or compliance checks."
+  - q: "Can I use Scribe v2 for captions?"
+    a: "Yes: transcribe → clean the text → generate captions (SRT/VTT) → review timing. Pair it with a consistent audio workflow so exports stay stable."
+---
+
+_Not the official ElevenLabs website. Some links may be affiliate links._
+
+## What is Scribe v2?
+
+Scribe v2 is a transcription workflow designed for creators, teams, and businesses that handle **audio at scale**: long recordings, mixed speakers, content repurposing, and fast QA.
+
+The main idea is simple: if transcription is part of your “content stack”, you want it to be **predictable** (stable on long audio), **brand-aware** (names and product terms), and **reviewable** (spot sensitive entities quickly).
+
+If you want to test Scribe workflows end‑to‑end, <a href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="nofollow sponsored noopener noreferrer" target="_blank">try ElevenLabs here</a> (affiliate link).
+
+## When to use it
+
+Scribe v2 is most useful when transcription is not the final output, but the **starting point** for multiple deliverables:
+
+- **Captions** for YouTube, courses, and product demos
+- **Short clips** (find the best moments, then cut)
+- **Searchable knowledge** (projects, libraries, “what did we say?”)
+- **QA & governance** (review sensitive content faster)
+
+If you only need a one-off transcript, any tool can work. But if you do transcription **weekly** (or daily), the workflow details matter.
+
+## Keyterm prompting
+
+Keyterm prompting lets you bias transcription toward specific terms using **context-aware prompting**. It’s designed for situations where generic transcription misses what matters most:
+
+- Brand names (including unusual spellings)
+- People names and company names
+- Acronyms, product SKUs, feature names
+- Technical vocabulary (AI, audio, compliance)
+
+The partner note we received highlights **up to 100 custom terms** for this workflow.
+
+### How to use it (practical method)
+
+1. **Build your “always-on” list** (10–30 terms).
+   - Your product/brand names
+   - Your top 10 competitors
+   - Common acronyms you say out loud
+2. **Add episode/project terms** (10–50 terms).
+   - Guest names, event names
+   - Cities, customer names (if allowed)
+   - Internal project codenames
+3. **Write short context lines** so the model understands the terms (not just the string).
+   - Example: “ElevenLabs Studio”, “Scribe v2”, “Projects”, “Voice Library”
+4. **Run a 60–90 second test** first.
+   - Listen for the hardest part: names + acronyms + fast speech
+5. **Lock a versioned list** once it performs.
+   - Store it like a preset: `terms_v3_2026-03` so your team stays consistent.
+
+Keyterm prompting should reduce the “death by a thousand fixes” problem: manually correcting the same product term across dozens of transcripts.
+
+## Entity detection
+
+Entity detection is about speed and safety. It can automatically detect and timestamp sensitive or important entities such as:
+
+- Names
+- Credit card numbers
+- Medical conditions
+- SSNs
+
+The note also mentions that entity detection supports **56 entity types**, and that it’s available in Scribe v1 as well.
+
+### How to use entity detection in real workflows
+
+- **Redaction workflow:** detect → review → redact before sharing with clients or publishing.
+- **Compliance review:** generate a “review list” of entities that need human sign‑off.
+- **Editing workflow:** jump straight to timestamped names/terms to verify correctness.
+
+Entity detection doesn’t replace policy. It replaces busywork: it gives reviewers a shortlist of “look here” timestamps instead of asking them to scan an hour of audio.
+
+## Smart multi-language audio
+
+If your content includes multiple languages (a common case in interviews, webinars, or global teams), Scribe v2 can automatically detect and transcribe multiple languages **within the same file**.
+
+Practical tips:
+
+- Keep **clean speaker turns** when you can (it improves punctuation and segmentation).
+- Use **keyterm prompting** for mixed-language brand terms (names are often the first thing to break).
+- QA the first 3–5 minutes; if it fails early, don’t waste an hour.
+
+## Captions workflow: transcript → SRT/VTT
+
+Most teams underestimate how much caption quality depends on the transcript workflow.
+
+Here’s a repeatable pipeline:
+
+1. **Transcribe** the audio (Scribe v2).
+2. **Clean the text**:
+   - Remove filler that hurts readability
+   - Fix brand terms and names (use keyterms)
+   - Standardize numbers and punctuation
+3. **Generate captions** (SRT/VTT).
+4. **Timing review**:
+   - Spot check fast segments and cuts
+   - Keep lines short (mobile readability)
+5. **Export & archive**:
+   - Save a “source” version before any retiming
+
+If you also generate voiceovers, pair this with the [full workflow page](/ai-voiceover-captions-workflow) (script → TTS → cleanup → captions → QA).
+
+## QA and governance (the boring part that saves you)
+
+When you scale production, problems scale too. The fastest teams win by building a small QA habit:
+
+- **Quality QA:** pronunciation, speaker names, jargon, timing
+- **Brand QA:** consistent terminology across videos
+- **Risk QA:** sensitive entities flagged and reviewed
+
+Entity detection is a lever here: it makes QA faster because reviewers aren’t guessing where the risks are.
+
+## “Content stack reset” angle (why this works in 2026)
+
+The best productivity gains often come from removing tool clutter. A single platform that covers:
+
+- Voice creation (TTS / core voices)
+- Consistency (voice library)
+- Organization (projects)
+- Transcription (Scribe v2)
+
+…can replace a patchwork of “one tool per task” workflows.
+
+If you’re rebuilding your 2026 stack, the best test is simple: run one real project through the workflow, then measure time saved on rework (names, redactions, caption drift, long silences).
+
+## Next steps
+
+- Read: [Voiceover + captions workflow (2026)](/ai-voiceover-captions-workflow)
+- Browse: [Blog hub](/blog)
+
+## FAQ
+
+### Is Scribe v2 only for English?
+
+No—Scribe v2 includes smart multi-language support, including auto-detection of multiple languages in the same audio file. Always test your languages on a short sample because coverage and quality can change.
+
+### What is keyterm prompting?
+
+It’s a way to bias transcription toward specific terms (brands, names, acronyms) using context-aware prompting—useful when standard keyword biasing misses your jargon.
+
+### What does entity detection do?
+
+It can automatically detect and timestamp sensitive or important entities (e.g., names, credit card numbers). Use it to speed up review, redaction, or compliance checks.
+
+### Can I use Scribe v2 for captions?
+
+Yes: transcribe → clean the text → generate captions (SRT/VTT) → review timing. Pair it with a consistent audio workflow so exports stay stable.
