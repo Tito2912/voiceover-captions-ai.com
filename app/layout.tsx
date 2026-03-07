@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     template: `%s | ${BRAND}`,
   },
   description: 'SEO-first content site for AI voiceovers, dubbing and captions.',
+  icons: { icon: '/favicon.ico' },
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: '/' },
   openGraph: {
