@@ -24,46 +24,300 @@
   status = 301
   force = true
 
-# Legacy + trailing slash cleanup (avoid duplicate URLs)
+# Legacy marketing pages (old nav) → new content hub
 [[redirects]]
-  from = "/blog/"
-  to = "/blog"
+  from = "/features"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/features/"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/features.html"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/use-cases"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/use-cases/"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/use-cases.html"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pricing"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pricing/"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pricing.html"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faq"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faq/"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faq.html"
+  to = "/ai-voiceover-captions-workflow"
+  status = 301
+  force = true
+
+# Legacy i18n paths (we keep one canonical language at root)
+[[redirects]]
+  from = "/fr"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/fr/"
-  to = "/fr"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/es/"
-  to = "/es"
+  from = "/fr/index.html"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/de/"
-  to = "/de"
+  from = "/fr.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/blog"
+  to = "/blog"
   status = 301
   force = true
 
 [[redirects]]
   from = "/fr/blog/"
-  to = "/fr/blog"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/mentions-legales"
+  to = "/legal-notice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/mentions-legales.html"
+  to = "/legal-notice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/politique-de-confidentialite"
+  to = "/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/politique-de-confidentialite.html"
+  to = "/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/blog/voix-avatar-2025"
+  to = "/voice-to-avatar-2025"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/blog/voix-avatar-2025.html"
+  to = "/voice-to-avatar-2025"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/blog"
+  to = "/blog"
   status = 301
   force = true
 
 [[redirects]]
   from = "/es/blog/"
-  to = "/es/blog"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/legal-notice"
+  to = "/legal-notice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/legal-notice.html"
+  to = "/legal-notice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/privacy-policy"
+  to = "/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/privacy-policy.html"
+  to = "/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/blog/voice-to-avatar-2025"
+  to = "/voice-to-avatar-2025"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/blog/voice-to-avatar-2025.html"
+  to = "/voice-to-avatar-2025"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/blog"
+  to = "/blog"
   status = 301
   force = true
 
 [[redirects]]
   from = "/de/blog/"
-  to = "/de/blog"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/legal-notice"
+  to = "/legal-notice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/legal-notice.html"
+  to = "/legal-notice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/privacy-policy"
+  to = "/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/privacy-policy.html"
+  to = "/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/blog/voice-to-avatar-2025"
+  to = "/voice-to-avatar-2025"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/de/blog/voice-to-avatar-2025.html"
+  to = "/voice-to-avatar-2025"
+  status = 301
+  force = true
+
+# Trailing slash cleanup (avoid duplicate URLs)
+[[redirects]]
+  from = "/blog/"
+  to = "/blog"
   status = 301
   force = true
 
@@ -74,44 +328,8 @@
   force = true
 
 [[redirects]]
-  from = "/fr/index.html"
-  to = "/fr"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/es/index.html"
-  to = "/es"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/de/index.html"
-  to = "/de"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/blog.html"
   to = "/blog"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/fr.html"
-  to = "/fr"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/es.html"
-  to = "/es"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/de.html"
-  to = "/de"
   status = 301
   force = true
 
@@ -128,42 +346,6 @@
   force = true
 
 [[redirects]]
-  from = "/fr/mentions-legales.html"
-  to = "/fr/mentions-legales"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/fr/politique-de-confidentialite.html"
-  to = "/fr/politique-de-confidentialite"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/es/legal-notice.html"
-  to = "/es/legal-notice"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/es/privacy-policy.html"
-  to = "/es/privacy-policy"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/de/legal-notice.html"
-  to = "/de/legal-notice"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/de/privacy-policy.html"
-  to = "/de/privacy-policy"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/blog/voice-to-avatar-2025.html"
   to = "/voice-to-avatar-2025"
   status = 301
@@ -172,24 +354,6 @@
 [[redirects]]
   from = "/blog/voice-to-avatar-2025"
   to = "/voice-to-avatar-2025"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/fr/blog/voix-avatar-2025.html"
-  to = "/fr/blog/voix-avatar-2025"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/es/blog/voice-to-avatar-2025.html"
-  to = "/es/blog/voice-to-avatar-2025"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/de/blog/voice-to-avatar-2025.html"
-  to = "/de/blog/voice-to-avatar-2025"
   status = 301
   force = true
 
