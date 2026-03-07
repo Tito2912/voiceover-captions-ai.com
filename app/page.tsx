@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/content';
+import { CTABox } from '@/components/CTABox';
 
 export default async function HomePage() {
   const posts = await getAllPosts();
@@ -12,6 +13,13 @@ export default async function HomePage() {
           Practical workflows, checklists and comparisons (with clean internal linking and schema).
         </p>
       </section>
+
+      <CTABox
+        title="Try ElevenLabs Studio"
+        body="Start with a 30–60s sample, iterate voice settings, then export WAV + SRT to validate your pipeline."
+        buttonLabel="Try ElevenLabs for free"
+        buttonHref="https://try.elevenlabs.io/q4qifzaxhkwg"
+      />
 
       <section className="card">
         <h2>Articles</h2>
