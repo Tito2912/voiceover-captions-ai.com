@@ -11,7 +11,7 @@ export function SiteHeader() {
           <Link href="/ai-voiceover-captions-workflow">Workflow</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/privacy-policy">Privacy</Link>
-          <a className="kbd" href={AFFILIATE_URL} rel="nofollow sponsored noopener noreferrer" target="_blank">
+          <a href={AFFILIATE_URL} rel="nofollow sponsored noopener noreferrer" target="_blank">
             Try ElevenLabs
           </a>
         </nav>
