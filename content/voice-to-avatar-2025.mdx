@@ -21,7 +21,7 @@ _Updated Feb 15, 2025._
 
 We built a full pipeline: record/clone in ElevenLabs Studio, dub in multiple languages, then feed the tracks into an avatar generator **without losing lip‑sync**. Here are the settings and the export checklist.
 
-> Note: tests were run on Studio 3.0 late‑2024 models with **48 kHz WAV** exports, then rendered in HeyGen and CapCut using translation and lip‑sync enabled.
+> Note: tests were run on Studio 3.0 late‑2024 models with **48 kHz WAV** exports, then rendered in <a href="https://www.heygen.com/?sid=rewardful&via=rayzvideoai" rel="nofollow sponsored noopener noreferrer" target="_blank">HeyGen</a> and <a href="https://capcutaffiliateprogram.pxf.io/yq111D" rel="nofollow sponsored noopener noreferrer" target="_blank">CapCut</a> using translation and lip‑sync enabled.
 
 Use this as a repeatable template. Every step below is tested on short hooks (30–45 seconds) and mid-form explainers (4–8 minutes) so you can see where sync drifts and how to fix it quickly.
 
@@ -29,7 +29,7 @@ Use this as a repeatable template. Every step below is tested on short hooks (30
 
 Start with one consistent preset so you’re not guessing per language. This is the build that survived the most tool handoffs:
 
-If you want to follow this tutorial step-by-step, <a href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="nofollow sponsored noopener noreferrer" target="_blank">try ElevenLabs Studio here</a> (affiliate link).
+If you want to follow this tutorial step-by-step, <a href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="nofollow sponsored noopener noreferrer" target="_blank">try ElevenLabs Studio here</a>.
 
 - Voice settings: Stability 62–68, Clarity + Similarity 42–48, style exaggeration off.
 - Safety: watermark on, blocklist for sensitive terms, “preserve punctuation” enabled for dubbing (if available on your plan).
@@ -61,12 +61,12 @@ If you want to follow this tutorial step-by-step, <a href="https://try.elevenlab
 
 1. Drop your cleaned script or SRT into Studio 3.0; keep sentences under 18 words for avatar tools that struggle with long visemes.
 2. Render a reference pass, mark any phoneme repeats, then regenerate only those lines. Avoid whole-paragraph re-renders.
-3. Export SRT with original timecodes. If you retime in CapCut/Descript later, keep a copy of this “source SRT” for back-sync.
+3. Export SRT with original timecodes. If you retime in <a href="https://capcutaffiliateprogram.pxf.io/yq111D" rel="nofollow sponsored noopener noreferrer" target="_blank">CapCut</a> later (or review captions in <a href="https://videocaptionstudio.com" rel="noopener noreferrer" target="_blank">videocaptionstudio.com</a>), keep a copy of this “source SRT” for back-sync.
 4. Label files with `lang_version_scene_take.wav` so the avatar tool and NLE stay aligned.
 
 ## Avatar handoff
 
-Import the clean WAV into an avatar video tool and let it handle translation/lip‑sync. A simple reference pipeline is: [avatar-video-ai.com](https://avatar-video-ai.com/). Tests: EN→FR→ES stayed synced on short hooks; DE needed one manual retime for plosives.
+Import the clean WAV into an avatar video tool and let it handle translation/lip‑sync. A simple reference pipeline is: [avatar-video-ai.com](https://avatar-video-ai.com/). For caption cleanup and timing review, you can also use <a href="https://videocaptionstudio.com" rel="noopener noreferrer" target="_blank">videocaptionstudio.com</a>. Tests: EN→FR→ES stayed synced on short hooks; DE needed one manual retime for plosives.
 
 - Disable auto-normalise inside the avatar tool if you already mastered to -16 LUFS; double-normalising adds pumping.
 - Keep viseme smoothing at default; cranking it up makes consonants drift out of sync after translation.
@@ -74,11 +74,11 @@ Import the clean WAV into an avatar video tool and let it handle translation/lip
 
 ## Export recipe: Studio → HeyGen → CapCut
 
-If you want to mirror this exact export path, <a href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="nofollow sponsored noopener noreferrer" target="_blank">open ElevenLabs Studio here</a> (affiliate link) and keep the WAV + SRT exports consistent end‑to‑end.
+If you want to mirror this exact export path, <a href="https://try.elevenlabs.io/q4qifzaxhkwg" rel="nofollow sponsored noopener noreferrer" target="_blank">open ElevenLabs Studio here</a> and keep the WAV + SRT exports consistent end‑to‑end.
 
 1. Studio 3.0: Export WAV 48 kHz mono + SRT; keep stems if you plan to add music later.
-2. HeyGen: Import WAV, set language to match file, leave lip-sync strength at default. Render a 1080p draft to inspect mouth shapes.
-3. CapCut: Swap in the final 4K render only after checking SRT against the draft. Apply light compression (-2 dB makeup, ratio 2:1) if you add music.
+2. <a href="https://www.heygen.com/?sid=rewardful&via=rayzvideoai" rel="nofollow sponsored noopener noreferrer" target="_blank">HeyGen</a>: Import WAV, set language to match file, leave lip-sync strength at default. Render a 1080p draft to inspect mouth shapes.
+3. <a href="https://capcutaffiliateprogram.pxf.io/yq111D" rel="nofollow sponsored noopener noreferrer" target="_blank">CapCut</a>: Swap in the final 4K render only after checking SRT against the draft. Apply light compression (-2 dB makeup, ratio 2:1) if you add music.
 4. Final QC: Peaks below -1 dBFS; SRT lines under 42 characters; no brand terms translated; visual frames free of jump-cut mouth resets.
 
 ## Checklist before export
