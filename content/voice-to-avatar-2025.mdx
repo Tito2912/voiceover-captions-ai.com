@@ -5,19 +5,21 @@ canonical: "/voice-to-avatar-2025"
 type: "guide"
 date: "2025-02-15"
 updatedAt: "2025-02-15"
+primaryKeyword: "voice to avatar workflow"
+internalLinks:
+  - href: "/ai-voiceover-captions-workflow"
+    anchor: "Full voiceover + captions workflow (2026)"
+  - href: "/blog"
+    anchor: "Back to the blog hub"
 ---
 
-<p className="article-date">Updated Feb 15, 2025</p>
+_Updated Feb 15, 2025._
 
 ## Voice → avatar workflow 2025: ElevenLabs Studio 3.0 + HeyGen
 
-<p className="intro">
-  We built a full pipeline: record/clone in ElevenLabs Studio 3.0, dub in multiple languages, then feed the tracks into an avatar generator without losing lip-sync. Here are the settings and the export checklist.
-</p>
+We built a full pipeline: record/clone in ElevenLabs Studio, dub in multiple languages, then feed the tracks into an avatar generator **without losing lip‑sync**. Here are the settings and the export checklist.
 
-<p className="note">
-  Tests were run on Studio 3.0 late-2024 models with 48 kHz WAV exports, then rendered in HeyGen and CapCut using translation and lip-sync enabled.
-</p>
+> Note: tests were run on Studio 3.0 late‑2024 models with **48 kHz WAV** exports, then rendered in HeyGen and CapCut using translation and lip‑sync enabled.
 
 Use this as a repeatable template. Every step below is tested on short hooks (30–45 seconds) and mid-form explainers (4–8 minutes) so you can see where sync drifts and how to fix it quickly.
 
@@ -25,12 +27,10 @@ Use this as a repeatable template. Every step below is tested on short hooks (30
 
 Start with one consistent preset so you’re not guessing per language. This is the build that survived the most tool handoffs:
 
-<ul className="checklist">
-  <li>Voice settings: Stability 62–68, Clarity + Similarity 42–48, Style exaggeration off.</li>
-  <li>Safety: Watermark on, blocklist for brands/medical terms, “preserve punctuation” enabled for dubbing.</li>
-  <li>Input normalisation: Loudness -16 LUFS with -3 dB peak ceiling; de-ess at 6–8 kHz, light gate at -38 dB.</li>
-  <li>Export: WAV 48 kHz mono for voice; keep stems for music/SFX if you’ll remix later.</li>
-</ul>
+- Voice settings: Stability 62–68, Clarity + Similarity 42–48, style exaggeration off.
+- Safety: watermark on, blocklist for sensitive terms, “preserve punctuation” enabled for dubbing (if available on your plan).
+- Input normalization: loudness around **-16 LUFS** with **-3 dB** peak ceiling; de‑ess at 6–8 kHz, light gate at -38 dB.
+- Export: WAV 48 kHz mono for voice; keep stems for music/SFX if you’ll remix later.
 
 ## What changed in Studio 3.0
 
@@ -62,7 +62,7 @@ Start with one consistent preset so you’re not guessing per language. This is 
 
 ## Avatar handoff
 
-Import the clean WAV into <a href="https://avatar-video-ai.com/" rel="noopener noreferrer" target="_blank">an avatar video tool</a> and let it handle translation/lip-sync. Tests: EN→FR→ES stayed synced on short hooks; DE needed one manual retime for plosives.
+Import the clean WAV into an avatar video tool and let it handle translation/lip‑sync. A simple reference pipeline is: [avatar-video-ai.com](https://avatar-video-ai.com/). Tests: EN→FR→ES stayed synced on short hooks; DE needed one manual retime for plosives.
 
 - Disable auto-normalise inside the avatar tool if you already mastered to -16 LUFS; double-normalising adds pumping.
 - Keep viseme smoothing at default; cranking it up makes consonants drift out of sync after translation.
@@ -109,4 +109,4 @@ Hook text here, under 18 words.
 Keep pauses short; avoid stacked commas.
 ```
 
-<p className="disclosure">Affiliate transparency: some links may earn a commission at no extra cost to you.</p>
+_Affiliate transparency: some links may earn a commission at no extra cost to you._

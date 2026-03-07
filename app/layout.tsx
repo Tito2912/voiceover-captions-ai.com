@@ -25,10 +25,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <link as="style" href="/assets/styles.min.css" rel="preload" />
-        <link href="/assets/styles.min.css" rel="stylesheet" />
-      </head>
       <body>
         <SiteHeader />
         <main className="container">{children}</main>
