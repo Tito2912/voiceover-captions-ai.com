@@ -1,6 +1,8 @@
 import { getAllPosts } from '@/lib/content';
 import type { MetadataRoute } from 'next';
 
+export const dynamic = 'force-static';
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://voiceover-captions-ai.com';
   const posts = await getAllPosts();
