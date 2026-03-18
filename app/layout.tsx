@@ -5,6 +5,7 @@ import { SiteHeader } from '@/components/SiteHeader';
 
 const SITE_URL = 'https://voiceover-captions-ai.com';
 const BRAND = 'Voiceover Captions AI';
+const OG_IMAGE = '/images/voiceover-captions-ai-logo.png';
 
 export const metadata: Metadata = {
   title: {
@@ -20,6 +21,13 @@ export const metadata: Metadata = {
     title: BRAND,
     description: 'SEO-first content site for AI voiceovers, dubbing and captions.',
     url: SITE_URL,
+    images: [{ url: OG_IMAGE }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: BRAND,
+    description: 'SEO-first content site for AI voiceovers, dubbing and captions.',
+    images: [OG_IMAGE],
   },
 };
 

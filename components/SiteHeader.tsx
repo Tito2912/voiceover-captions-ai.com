@@ -18,6 +18,8 @@ export function SiteHeader() {
         <nav className="nav" aria-label="Primary">
           <Link href="/ai-voiceover-captions-workflow">Workflow</Link>
           <Link href="/blog">Blog</Link>
+          <Link href="/methodology">Methodology</Link>
+          <Link href="/sources">Sources</Link>
           <Link href="/privacy-policy">Privacy</Link>
           <a href={AFFILIATE_URL} rel="nofollow sponsored noopener noreferrer" target="_blank">
             Try ElevenLabs

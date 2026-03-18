@@ -4,6 +4,8 @@ import { ArticleLayout } from '@/components/ArticleLayout';
 import { getAllSlugs, getPostBySlug } from '@/lib/content';
 import { buildArticleJsonLd, buildBreadcrumbJsonLd } from '@/lib/schema';
 
+const OG_IMAGE = '/images/voiceover-captions-ai-logo.png';
+
 export async function generateStaticParams() {
   const slugs = await getAllSlugs();
   return slugs.map((slug) => ({ slug }));
@@ -25,6 +27,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post.title,
       description: post.description,
       url: canonical,
+      images: [{ url: OG_IMAGE }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: [OG_IMAGE],
     },
   };
 }

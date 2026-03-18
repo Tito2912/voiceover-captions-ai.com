@@ -1,0 +1,130 @@
+---
+title: "Transcription vs Captioning (2026): different jobs, different QA"
+description: "Transcription and captioning are not the same workflow. Here is what changes in editing, timing, exports and review in 2026."
+canonical: "/transcription-vs-captioning-2026"
+type: "guide"
+updatedAt: "2026-03-13"
+primaryKeyword: "transcription vs captioning"
+jumpLinks:
+  - href: "#the-core-difference"
+    label: "Core difference"
+  - href: "#where-the-workflow-splits"
+    label: "Workflow split"
+  - href: "#when-transcription-is-enough"
+    label: "When transcription is enough"
+  - href: "#when-captioning-needs-extra-work"
+    label: "When captioning needs extra work"
+  - href: "#choosing-the-right-stack"
+    label: "Choosing the right stack"
+quickAnswer:
+  - "Transcription produces text from audio. Captioning produces readable, timed text for viewers."
+  - "A good transcript can become a caption draft, but it is rarely the final caption file."
+  - "The gap is timing, segmentation and readability under real viewing conditions."
+internalLinks:
+  - href: "/elevenlabs-scribe-v2-transcription-2026"
+    anchor: "Scribe v2: transcription at scale for captions and QA"
+  - href: "/caption-workflow-youtube-shorts-2026"
+    anchor: "Short-form caption workflow"
+  - href: "/best-ai-caption-tools-2026"
+    anchor: "Best AI caption tools: evaluation grid"
+  - href: "/ai-voiceover-captions-workflow"
+    anchor: "Full voiceover + captions workflow"
+  - href: "/blog"
+    anchor: "Back to the captions / transcription hub"
+faq:
+  - q: "Can I publish the raw transcript as captions?"
+    a: "Sometimes for simple content, but most workflows still need segmentation, timing checks and readability edits before publishing."
+  - q: "Why does a good transcript still create bad captions?"
+    a: "Because transcripts optimize for textual completeness, while captions optimize for readable viewing under timing constraints."
+  - q: "Which comes first in a workflow?"
+    a: "Usually transcription first, then caption cleanup. In scripted voiceover workflows, the script may act as the source text before subtitles are exported."
+---
+
+_Independent guide for teams deciding how to structure caption and transcript operations._
+
+## The core difference
+
+Transcription answers: **what was said?**
+
+Captioning answers: **what can the viewer read comfortably at the right moment?**
+
+That difference changes everything.
+
+A transcript can keep fillers, long sentences and literal phrasing. Captions usually need:
+
+- shorter readable units
+- better line breaks
+- timing that matches the video cut
+- mobile-friendly pacing
+
+This is why “good transcript” and “good captions” are not the same quality bar.
+
+## Where the workflow splits
+
+The workflows stay together at the start, then split:
+
+1. audio in
+2. transcript draft
+3. text cleanup
+4. caption timing and segmentation
+5. final export review
+
+If your team treats step 2 as step 5, captions usually feel unfinished.
+
+That matters even more when you translate, dub, or cut short-form video after the transcript exists.
+
+## When transcription is enough
+
+Transcription can be enough when the final goal is:
+
+- searchable notes
+- archive or knowledge retrieval
+- rough clip finding
+- meeting or interview review
+
+In those cases, the priority is completeness and speed, not viewer readability.
+
+If this is your main use case, start with a transcription system like the [Scribe v2 workflow](/elevenlabs-scribe-v2-transcription-2026) and only add caption steps where needed.
+
+## When captioning needs extra work
+
+Captioning needs extra work when viewers will read on-screen while the video continues moving.
+
+That is the normal case for:
+
+- YouTube videos
+- courses
+- explainers
+- social clips
+- dubbed videos
+
+The extra work is usually:
+
+- splitting lines for readability
+- adjusting timing around cuts
+- normalizing names and terms
+- checking the final export after the edit is locked
+
+Short-form content exaggerates these problems, which is why the [YouTube Shorts workflow](/caption-workflow-youtube-shorts-2026) needs its own process.
+
+## Choosing the right stack
+
+Choose a transcription-first stack if:
+
+- text reuse matters more than on-screen styling
+- you review long recordings often
+- search, notes or compliance are part of the job
+
+Choose a caption-first stack if:
+
+- the viewer experience is the main output
+- you publish frequently to video platforms
+- your team spends more time fixing timing than fixing words
+
+Choose a voiceover-first stack if:
+
+- the script is created before audio
+- you generate or dub the voice track
+- subtitle stability depends on the TTS workflow
+
+That last case is exactly what the [voiceover + captions workflow](/ai-voiceover-captions-workflow) is built for.
