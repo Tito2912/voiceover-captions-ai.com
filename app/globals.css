@@ -36,3 +36,13 @@ a:hover{text-decoration:underline}
 .faq details{border:1px solid var(--border);border-radius:12px;padding:10px 12px;background:#fff}
 .faq details+details{margin-top:10px}
 .faq summary{cursor:pointer;font-weight:700}
+
+/* Cookie banner (GA4 opt-in) */
+.cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;border:1px solid var(--border);background:#fff;border-radius:14px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,.08);display:flex;gap:14px;align-items:center;justify-content:space-between;z-index:50}
+.cookie-banner p{margin:0;color:var(--muted);font-size:14px}
+.cookie-banner.hidden{display:none}
+.cookie-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.cookie-btn{display:inline-block;background:#fff;color:var(--fg);border:1px solid var(--border);border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer}
+.cookie-btn:hover{filter:brightness(.98)}
+.cookie-btn--primary{background:var(--link);color:#fff;border:1px solid rgba(0,0,0,.06)}
+.cookie-btn--primary:hover{filter:brightness(.98)}
