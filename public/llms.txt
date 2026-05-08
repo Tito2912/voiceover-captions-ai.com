@@ -10,18 +10,18 @@ This site curates product overviews, setup guides, and compliance policies for a
 - Contact: mailto:contact.ecomshopfrance@gmail.com
 - Owner: Voiceover Captions AI
 - Policy: https://voiceover-captions-ai.com/privacy-policy
-- Last-Modified: 2025-12-08
+- Last-Modified: 2026-05-08
 
 ## Core pages
 
-- [Homepage](https://voiceover-captions-ai.com/index.html): ElevenLabs Studio 3.0 overview and primary calls-to-action.
-- [Blog index](https://voiceover-captions-ai.com/blog/): Latest guides and product updates.
-- [Voice to avatar 2025 guide](https://voiceover-captions-ai.com/blog/voice-to-avatar-2025): Steps for building avatars with voice cloning.
+- [Homepage](https://voiceover-captions-ai.com/): AI voiceover and captions workflow guides.
+- [Blog index](https://voiceover-captions-ai.com/blog): Latest guides and product updates.
+- [Voice to avatar 2025 guide](https://voiceover-captions-ai.com/voice-to-avatar-2025): Steps for building avatars with voice cloning.
 
 ## Policies
 
-- [Privacy policy](https://voiceover-captions-ai.com/privacy-policy.html): Data usage and consent details.
-- [Legal notice](https://voiceover-captions-ai.com/legal-notice.html): Ownership and compliance information.
+- [Privacy policy](https://voiceover-captions-ai.com/privacy-policy): Data usage and consent details.
+- [Legal notice](https://voiceover-captions-ai.com/legal-notice): Ownership and compliance information.
 - [Robots.txt](https://voiceover-captions-ai.com/robots.txt): Crawling directives for web bots.
 
 ## Optional

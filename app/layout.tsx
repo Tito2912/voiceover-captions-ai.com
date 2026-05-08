@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'SEO-first content site for AI voiceovers, dubbing and captions.',
   icons: { icon: '/favicon.ico' },
   metadataBase: new URL(SITE_URL),
-  alternates: { canonical: '/' },
+  alternates: { canonical: '/', languages: { en: '/', 'x-default': '/' } },
   openGraph: {
     type: 'website',
     title: BRAND,
