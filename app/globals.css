@@ -18,6 +18,7 @@ a:hover{text-decoration:underline}
 .muted{color:var(--muted);font-size:14px}
 .list{padding-left:18px}
 .article h1{font-size:34px;line-height:1.15;margin:0 0 10px}
+.article h2,.article h3,.article h4{scroll-margin-top:72px}
 .article .lede{color:var(--muted);margin:0 0 14px}
 .grid{display:grid;grid-template-columns:1fr;gap:16px}
 @media(min-width:900px){.grid{grid-template-columns:2fr 1fr}}

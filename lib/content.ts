@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import type { Post, PostType } from '@/lib/types';
 import type { TocHeading } from '@/components/TableOfContents';
+import { mdxComponents } from '@/lib/mdx-components';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
@@ -90,6 +91,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
   // Build-time compilation of trusted local MDX.
   const compiled = await compileMDX({
     source: mdxSource,
+    components: mdxComponents,
     options: {
       parseFrontmatter: false,
       mdxOptions: {
