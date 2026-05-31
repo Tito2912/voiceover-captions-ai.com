@@ -1,6 +1,6 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 
-const AFFILIATE_URL = 'https://try.elevenlabs.io/q4qifzaxhkwg';
+const AFFILIATE_URL = 'https://try.elevenlabs.io/uo7tjoejxk32';
 
 export function SiteHeader() {
   return (
